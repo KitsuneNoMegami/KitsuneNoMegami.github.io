@@ -93,7 +93,8 @@ function footerHTML() {
             <div>
             <a href="https://wobble.town/visit/3126"><img src="https://wobble.town/visit/3126/wobble.gif"></a>
             </div>
-      </footer>`;
+      <div align=center><a href='https://www.counter12.com'><img src='https://www.counter12.com/img-cd35wy4ZCZ6y65z3-80.gif' border='0' alt='free counter'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=cd35wy4ZCZ6y65z3'></script></div>
+      </footer >`;
 }
 
 /* Do not edit anything below this line unless you know what you're doing. */
