@@ -7,13 +7,13 @@
   /* Background Colors: */
   --background-color: #eeeeee;
   --content-background-color: #ffffff;
-  --sidebar-background-color: #b7686d;
+  --sidebar-background-color: #793763;
 
   /* Text Colors: */
   --text-color: #000000;
-  --sidebar-text-color: #000000;
-  --link-color: #3026e8;
-  --link-color-hover: #7780ec;
+  --sidebar-text-color: #f9ebe0;
+  --link-color: #f9ebe0;
+  --link-color-hover: #f9ebe0;
 
   /* Text: */
   --font: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, メイリオ, Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', 'ＭＳ ゴシック' , 'MS Gothic', 'Noto Sans CJK JP', TakaoPGothic, sans-serif;
@@ -48,7 +48,7 @@ body {
   font-family: var(--font);
   line-height: 1.2;
   background: var(--background-color);
-  background-image: url("/images/background/pentacles.jpg");
+  background-image: url("/images/background/sol_annee_70.jpg");
   
 }
 
@@ -72,6 +72,7 @@ a {
 a,
 a:visited {
   color: var(--link-color);
+  text-decoration: none;
 }
 
 a:hover,
@@ -133,12 +134,22 @@ header {
 
 aside {
   grid-area: aside;
-  border: var(--border);
-  border-radius: var(--round-borders);
   overflow: hidden;
-  background: var(--sidebar-background-color);
+  background: transparent;
   padding: var(--padding);
   color: var(--sidebar-text-color);
+}
+
+aside>div{
+    margin: -10%;
+    border : var(--border);
+    background: var(--sidebar-background-color);
+    min-height: 150px;
+    padding: 30px 10px;
+}
+
+aside>marquee {
+  margin: -10%;
 }
 
 .left-sidebar {
@@ -246,6 +257,7 @@ nav ul {
 
 nav ul li {
   margin-bottom: 0;
+  line-height: 2;
 }
 
 nav > ul li > a,

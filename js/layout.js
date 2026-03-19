@@ -37,13 +37,16 @@ function headerHTML() {
 	  
         
         <!-- NAVIGATION -->
-        <nav>
-          <div class="sidebar-title">Navigation</div>
-          <ul>
-            <li><a href="/pages/index.html">Home</a></li>
-            <li><a href="/pages/more-about-me.html">More about me</a></li>
-        	<li>
-        </nav>
+        <div class="sidebar-section">
+          <nav>
+            <div class="sidebar-title">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/more-about-me.html">More about me</a></li>
+            <li>
+            </div>
+          </nav>
+        </div>
         
         
         <div class="sidebar-section">
@@ -52,9 +55,14 @@ function headerHTML() {
             <p>"Boop" - by Me</p>
           </blockquote>
         </div>
-                
+                      
+        
         <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
+          <div class="sidebar-title">Links</div>
+          <div class="site-button">
+          	<a href="https://github.com/KitsuneNoMegami"><img src="/images/buttonrepositoy.gif" alt="buttonrepository"></a>
+          </div>
+        </div>
           <marquee>
           	<img src="/images/stamps/nomnomnom.gif" alt="nomnomnom">
           	<img src="/images/stamps/rawr.gif" alt="rawr">
@@ -64,15 +72,6 @@ function headerHTML() {
           	<img src="/images/stamps/bubble.gif" alt="bubble">
           	<img src="/images/stamps/rainbow.gif" alt="rainbow">
           </marquee>
-        </div>
-        
-        
-        <div class="sidebar-section">
-          <div class="sidebar-title">Links</div>
-          <div class="site-button">
-          	<a href="https://github.com/KitsuneNoMegami"><img src="/images/buttonrepositoy.gif" alt="buttonrepository"></a>
-          </div>
-        </div>
       </aside>
 	
       `;
