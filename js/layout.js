@@ -38,8 +38,8 @@ function headerHTML() {
         
         <!-- NAVIGATION -->
         <div class="sidebar-section">
+        <div class="sidebar-title">Navigation</div>
           <nav>
-            <div class="sidebar-title">
             <ul>
               <li><a href="/index.html">Home</a></li>
               <li><a href="/more-about-me.html">More about me</a></li>
@@ -48,30 +48,36 @@ function headerHTML() {
           </nav>
         </div>
         
-        
         <div class="sidebar-section">
           <div class="sidebar-title">Quote</div>
           <blockquote>
             <p>"Boop" - by Me</p>
           </blockquote>
         </div>
-                      
+
+        <div class="sidebar-section"> 
+          <div class="sidebar-title">My time</div>
+          <iframe src="https://free.timeanddate.com/clock/iac6mi2d/n195/tlfr2/fn6/fcf9ebe0/tct/pct/ta1" frameborder="0" width="170" height="22" allowtransparency="true"></iframe>
+        </div>  
+             
         
         <div class="sidebar-section">
           <div class="sidebar-title">Links</div>
           <div class="site-button">
-          	<a href="https://github.com/KitsuneNoMegami"><img src="/images/buttonrepositoy.gif" alt="buttonrepository"></a>
+          	<div><a href="https://github.com/KitsuneNoMegami"><img src="/images/buttonrepositoy.gif" alt="buttonrepository"></a></div>
+            <div><a href="https://boxd.it/bOZFp"><img src="/images/letterboxd.gif"  alt="buttonletterboxd"></a></div>
           </div>
         </div>
-          <marquee>
-          	<img src="/images/stamps/nomnomnom.gif" alt="nomnomnom">
-          	<img src="/images/stamps/rawr.gif" alt="rawr">
-          	<img src="/images/stamps/clubpenguin.jpg" alt="clubpenguin">
-          	<img src="/images/stamps/computeralive.png" alt="computeralive">
-          	<img src="/images/stamps/ragequit.gif" alt="ragequit">
-          	<img src="/images/stamps/bubble.gif" alt="bubble">
-          	<img src="/images/stamps/rainbow.gif" alt="rainbow">
-          </marquee>
+        
+        <marquee>
+        	<img src="/images/stamps/nomnomnom.gif" alt="nomnomnom">
+        	<img src="/images/stamps/rawr.gif" alt="rawr">
+        	<img src="/images/stamps/clubpenguin.jpg" alt="clubpenguin">
+        	<img src="/images/stamps/computeralive.png" alt="computeralive">
+         	<img src="/images/stamps/ragequit.gif" alt="ragequit">
+        	<img src="/images/stamps/bubble.gif" alt="bubble">
+        	<img src="/images/stamps/rainbow.gif" alt="rainbow">
+        </marquee>
       </aside>
 	
       `;
@@ -92,9 +98,9 @@ function footerHTML() {
       <footer>
             <div>
             <a href="https://wobble.town/visit/3126"><img src="https://wobble.town/visit/3126/wobble.gif"></a>
+            <p>© 2025 Beth, all rights reserved ♡</p>
             </div>
-      <div align=center><a href='https://www.counter12.com'><img src='https://www.counter12.com/img-cd35wy4ZCZ6y65z3-80.gif' border='0' alt='free counter'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=cd35wy4ZCZ6y65z3'></script></div>
-      </footer >`;
+      </footer>`;
 }
 
 /* Do not edit anything below this line unless you know what you're doing. */

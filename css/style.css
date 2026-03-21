@@ -5,8 +5,8 @@
 /* Variables are used like this: var(--text-color) */
 :root {
   /* Background Colors: */
-  --background-color: #eeeeee;
-  --content-background-color: #ffffff;
+  --background-color: #f9ebe0;
+  --content-background-color: #f9ebe0;
   --sidebar-background-color: #793763;
 
   /* Text Colors: */
@@ -16,8 +16,8 @@
   --link-color-hover: #f9ebe0;
 
   /* Text: */
-  --font: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, メイリオ, Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', 'ＭＳ ゴシック' , 'MS Gothic', 'Noto Sans CJK JP', TakaoPGothic, sans-serif;
-  --heading-font: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, メイリオ, Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', 'ＭＳ ゴシック' , 'MS Gothic', 'Noto Sans CJK JP', TakaoPGothic, sans-serif;
+  --font: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, メイリオ, Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', 'ＭＳ ゴシック', 'MS Gothic', 'Noto Sans CJK JP', TakaoPGothic, sans-serif;
+  --heading-font: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, メイリオ, Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', 'ＭＳ ゴシック', 'MS Gothic', 'Noto Sans CJK JP', TakaoPGothic, sans-serif;
   --font-size: 14px;
 
   /* Other Settings: */
@@ -79,7 +79,54 @@ a:hover,
 a:focus {
   color: var(--link-color-hover);
   text-decoration: none;
-    cursor: url("/images/cursorselect.cur"), auto;
+  cursor: url("/images/cursorselect.cur"), auto;
+}
+
+.portfolio-gallery {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.portfolio-gallery div {
+  box-sizing: border-box;
+  width: calc(33% - 10px);
+  margin: 5px;
+  border: 5px solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-gallery div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-gallery div span {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgb(201, 200, 200);
+  color: black;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 20px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 0.4s ease, opacity 0.5s ease;
+  font-family: var(--font);
+}
+
+.portfolio-gallery div:hover span {
+  opacity: 1;
+  transform: none;
+}
+
+.portfolio-gallery div:hover img {
+  transform: scale(1.35) rotate(10deg);
 }
 
 /* -------------------------------------------------------- */
@@ -141,16 +188,20 @@ aside {
   color: var(--sidebar-text-color);
 }
 
-aside>div{
-    margin: -10%;
-    border : var(--border);
-    background: var(--sidebar-background-color);
-    min-height: 150px;
-    padding: 30px 10px;
+aside>div {
+  margin: -10%;
+  padding: 30px 10px;
+  position: relative;
+  height: fit-content;
 }
 
 aside>marquee {
   margin: -10%;
+}
+
+.sidebar-section {
+  border: var(--border);
+  background: var(--sidebar-background-color);
 }
 
 .left-sidebar {
@@ -165,10 +216,20 @@ aside>marquee {
   font-weight: bold;
   font-size: 1.2em;
   font-family: var(--heading-font);
+  left: 15px;
+}
+
+.sidebar-section>.sidebar-title {
+  position: absolute;
+  top: -1.3em;
 }
 
 .sidebar-section:not(:last-child) {
   margin-bottom: 3em;
+}
+
+.sidebar-section:first-child {
+  margin-top: 0.0em;
 }
 
 .sidebar-section ul,
@@ -176,9 +237,14 @@ aside>marquee {
   padding-left: 1.5em;
 }
 
-.sidebar-section > *:not(p):not(ul):not(ol):not(blockquote) {
+.sidebar-section>*:not(p):not(ul):not(ol):not(blockquote) {
   margin-top: 10px;
 }
+
+iframe{
+  color : var(--sidebar-text-color);
+}
+
 
 /* Sidebar Blockquote: */
 
@@ -190,25 +256,35 @@ aside>marquee {
   overflow: hidden;
 }
 
-.sidebar-section blockquote > *:first-child {
+.sidebar-section blockquote>*:first-child {
   margin-top: 0;
 }
 
-.sidebar-section blockquote > *:last-child {
+.sidebar-section blockquote>*:last-child {
   margin-bottom: 0;
 }
 
 /* Site Button: */
 
-.site-button {
+.site-button{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 .site-button textarea {
   font-family: monospace;
   font-size: 0.7em;
+}
+
+.site-button div{
+  box-sizing: border-box;
+  width: calc(50% - 10px);
+  margin: 5px;
+}
+
+.site-button img{
+  width:100%;
+
 }
 
 /* -------------------------------------------------------- */
@@ -217,37 +293,26 @@ aside>marquee {
 
 footer {
   grid-area: footer;
-  border: var(--border);
   border-radius: var(--round-borders);
   overflow: hidden;
   font-size: 0.75em;
   padding: 15px;
-  background: var(--content-background-color);
   display: flex;
   justify-content: center;
+  color: var(--background-color);
+  font-family: var(--font);
+  margin-left: 15%;
 }
 
-footer a,
-footer a:visited {
-  color: var(--link-color);
-}
-
-footer a:hover,
-footer a:focus {
-  color: var(--link-color-hover);
+footer a{
+  margin-left: 33%;
 }
 
 /* -------------------------------------------------------- */
 /* NAVIGATION */
 /* -------------------------------------------------------- */
 
-nav {
-  margin-bottom: 3em;
-}
 
-nav .sidebar-title {
-  margin-bottom: 0.5em;
-}
 
 nav ul {
   margin: 0 -5px;
@@ -261,28 +326,20 @@ nav ul li {
   line-height: 2;
 }
 
-nav > ul li > a,
-nav > ul li > strong {
+nav>ul li>a,
+nav>ul li>strong {
   display: inline-block;
 }
 
-nav > ul li > a,
-nav > ul li > details summary,
-nav > ul li > strong {
-  padding: 5px 10px;
-}
 
-nav > ul li > a.active,
-nav > ul li > details.active summary {
+
+nav>ul li>a.active,
+nav>ul li>details.active summary {
   font-weight: bold;
 }
 
 nav ul summary {
   cursor: pointer;
-}
-
-nav ul ul li > a {
-  padding-left: 30px;
 }
 
 
@@ -407,16 +464,16 @@ main h6 {
   display: flex;
 }
 
-.two-columns > * {
+.two-columns>* {
   flex: 1 1 0;
   margin: 0;
 }
 
-.two-columns > *:first-child {
+.two-columns>*:first-child {
   padding-right: 0.75em;
 }
 
-.two-columns > *:last-child {
+.two-columns>*:last-child {
   padding-left: 0.75em;
 }
 
@@ -490,12 +547,12 @@ main h6 {
 
   .layout {
     width: 100%;
-    grid-template: "header" auto  "leftSidebar" auto "main" auto "footer" auto / 1fr;
+    grid-template: "header" auto "leftSidebar" auto "main" auto "footer" auto / 1fr;
     /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
   }
 
-  
-  .right-sidebar { 
+
+  .right-sidebar {
     display: none;
   }
 
@@ -505,18 +562,18 @@ main h6 {
     font-size: 0.9em;
   }
 
-  
+
   nav {
     padding: 0;
   }
 
-  nav > ul {
+  nav>ul {
     padding-top: 0.5em;
   }
 
-  nav > ul li > a,
-  nav > ul li > details summary,
-  nav > ul li > strong {
+  nav>ul li>a,
+  nav>ul li>details summary,
+  nav>ul li>strong {
     padding: 0.5em;
   }
 
@@ -531,6 +588,12 @@ main h6 {
 
   .images img {
     width: 100%;
+  }
+
+  @media (max-width: 800px) {
+    .portfolio-gallery div {
+      width: calc(50% - 10px);
+    }
   }
 
   #skip-to-content-link {
