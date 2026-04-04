@@ -84,7 +84,7 @@ a:focus {
 
 .portfolio-gallery {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .portfolio-gallery div {
@@ -137,7 +137,7 @@ a:focus {
   width: 1000px;
   display: grid;
   grid-gap: var(--margin);
-  grid-template: "header header" auto "leftSidebar main" auto "footer footer" auto / var(--sidebar-width) auto;
+  grid-template: "header header header" auto "leftSidebar main rightSidebar" auto "footer footer footer" auto / var(--sidebar-width) auto;
 }
 
 main {
@@ -177,7 +177,7 @@ header {
 }
 
 /* -------------------------------------------------------- */
-/* SIDEBARS */
+/*?                    SIDEBARS                             */
 /* -------------------------------------------------------- */
 
 aside {
@@ -206,10 +206,6 @@ aside>marquee {
 
 .left-sidebar {
   grid-area: leftSidebar;
-}
-
-.right-sidebar {
-  grid-area: rightSidebar;
 }
 
 .sidebar-title {
@@ -241,8 +237,22 @@ aside>marquee {
   margin-top: 10px;
 }
 
-iframe{
-  color : var(--sidebar-text-color);
+iframe {
+  color: var(--sidebar-text-color);
+}
+
+/* ------------------------------ */
+/*? Right
+/* ------------------------------ */
+
+
+.right-sidebar {
+  grid-area: rightSidebar;
+  width: 180px;
+}
+
+.right-sidebar a {
+  margin-left: 35%;
 }
 
 
@@ -266,7 +276,7 @@ iframe{
 
 /* Site Button: */
 
-.site-button{
+.site-button {
   display: flex;
   flex-wrap: wrap;
 }
@@ -276,14 +286,14 @@ iframe{
   font-size: 0.7em;
 }
 
-.site-button div{
+.site-button div {
   box-sizing: border-box;
   width: calc(50% - 10px);
   margin: 5px;
 }
 
-.site-button img{
-  width:100%;
+.site-button img {
+  width: 100%;
 
 }
 
@@ -296,16 +306,18 @@ footer {
   border-radius: var(--round-borders);
   overflow: hidden;
   font-size: 0.75em;
+  font-weight: bold;
   padding: 15px;
   display: flex;
   justify-content: center;
   color: var(--background-color);
   font-family: var(--font);
   margin-left: 15%;
+  text-align: center;
 }
 
-footer a{
-  margin-left: 33%;
+footer img {
+  width: 70%;
 }
 
 /* -------------------------------------------------------- */
@@ -475,6 +487,52 @@ main h6 {
 
 .two-columns>*:last-child {
   padding-left: 0.75em;
+}
+
+/*FAQ*/
+
+.faq-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-title {
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.answer {
+  padding: 10px;
+  font-size: 1rem;
+  color: #555;
+  display: none;
+}
+
+.faq-question.active .icon {
+  content: "-";
 }
 
 /* -------------------------------------------------------- */

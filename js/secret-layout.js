@@ -1,31 +1,6 @@
-document.addEventListener("DOMContentLoaded", () =>{
-  const questions = document.querySelectorAll(".faq-question");
-  
-  questions.forEach(question => {
-    question.addEventListener("click", ()=> {
-      question.classList.toggle("active");
-      const answer = question.nextElementSibling;
-      const icon = question.querySelector(".icon");
-      
-      if (answer.style.display === "block") {
-        answer.style.display = "none";
-        icon.textContent = "+";
-      } else {
-        answer.style.display = "block";
-        icon.textContent ="-";
-      }
-    });
-  });
-  
-  
-});
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
   // Page has finished loading. Now, do things.
-  loadLayoutByPetraPixel();
+  loadLayout();
 
   // Add any custom JavaScript code here...
 });
@@ -48,7 +23,7 @@ function gererEvenementDeDefilement(event) {
 }
 
 
-function loadLayoutByPetraPixel() {
+function loadLayout() {
   const mainEl = document.querySelector("main");
   if (!mainEl) return;
   mainEl.insertAdjacentHTML("beforebegin", headerHTML());
@@ -84,8 +59,10 @@ function headerHTML() {
         <div class="sidebar-title">Navigation</div>
           <nav>
             <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./more-about-me.html">More about me</a></li>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/more-about-me.html">More about me</a></li>
+              <li><a href="/useful-links.html">Usefull things</a></li>
+
             <li>
             </div>
           </nav>
@@ -113,7 +90,7 @@ function headerHTML() {
         </div>
         
         <marquee>
-        <a href="./my-site.html">
+        <a href="/my-site.html">
         	<img src="/images/stamps/nomnomnom.gif" alt="nomnomnom">
         	<img src="/images/stamps/rawr.gif" alt="rawr">
         	<img src="/images/stamps/clubpenguin.jpg" alt="clubpenguin">
@@ -140,8 +117,7 @@ function footerHTML() {
 
       <footer>
             <div>
-            <p><img src="/images/noAI.gif"></br>
-            © 2025 Beth, all rights reserved ♡</p>
+            <p>© 2025 Beth, all rights reserved ♡</p>
             </div>
       </footer>`;
 }
