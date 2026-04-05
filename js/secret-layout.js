@@ -1,6 +1,31 @@
+document.addEventListener("DOMContentLoaded", () =>{
+  const questions = document.querySelectorAll(".faq-question");
+  
+  questions.forEach(question => {
+    question.addEventListener("click", ()=> {
+      question.classList.toggle("active");
+      const answer = question.nextElementSibling;
+      const icon = question.querySelector(".icon");
+      
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+        icon.textContent = "+";
+      } else {
+        answer.style.display = "block";
+        icon.textContent ="-";
+      }
+    });
+  });
+  
+  
+});
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   // Page has finished loading. Now, do things.
-  loadLayout();
+  loadLayoutByPetraPixel();
 
   // Add any custom JavaScript code here...
 });
@@ -23,7 +48,7 @@ function gererEvenementDeDefilement(event) {
 }
 
 
-function loadLayout() {
+function loadLayoutByPetraPixel() {
   const mainEl = document.querySelector("main");
   if (!mainEl) return;
   mainEl.insertAdjacentHTML("beforebegin", headerHTML());
@@ -59,10 +84,11 @@ function headerHTML() {
         <div class="sidebar-title">Navigation</div>
           <nav>
             <ul>
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/more-about-me.html">More about me</a></li>
-              <li><a href="/useful-links.html">Usefull things</a></li>
-
+              <li><a href="./index.html">Portfolio</a></li>
+              <li><a href="./my-site.html">Home</a></li>
+              <li><a href="./resources.html">Resources</a></li>
+              <li><a href="./creations.html">My creations</a></li>
+              <li><a href="./surprise.html">Surprise</a></li>
             <li>
             </div>
           </nav>
@@ -89,17 +115,6 @@ function headerHTML() {
           </div>
         </div>
         
-        <marquee>
-        <a href="/my-site.html">
-        	<img src="/images/stamps/nomnomnom.gif" alt="nomnomnom">
-        	<img src="/images/stamps/rawr.gif" alt="rawr">
-        	<img src="/images/stamps/clubpenguin.jpg" alt="clubpenguin">
-        	<img src="/images/stamps/computeralive.png" alt="computeralive">
-         	<img src="/images/stamps/ragequit.gif" alt="ragequit">
-        	<img src="/images/stamps/bubble.gif" alt="bubble">
-        	<img src="/images/stamps/rainbow.gif" alt="rainbow">
-        </marquee>
-        </a>  
       </aside>`;
 }
 
@@ -115,11 +130,14 @@ function footerHTML() {
       <!-- FOOTER -->
       <!-- =============================================== -->
 
-      <footer>
+        <footer>
             <div>
-            <p>© 2025 Beth, all rights reserved ♡</p>
+                <img src="/images/plushies.png" width="70%">
+            <p><img src="/images/noAI.gif" ></br>
+            © 2025 Beth, all rights reserved ♡</p>
             </div>
-      </footer>`;
+        </footer>
+`;
 }
 
 /* Do not edit anything below this line unless you know what you're doing. */

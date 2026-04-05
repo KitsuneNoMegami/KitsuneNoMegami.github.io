@@ -82,6 +82,10 @@ a:focus {
   cursor: url("/images/cursorselect.cur"), auto;
 }
 
+.links {
+  color: var(--text-color);
+}
+
 .portfolio-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -312,12 +316,8 @@ footer {
   justify-content: center;
   color: var(--background-color);
   font-family: var(--font);
-  margin-left: 15%;
   text-align: center;
-}
-
-footer img {
-  width: 70%;
+  margin-top: -2%;
 }
 
 /* -------------------------------------------------------- */
