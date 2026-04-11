@@ -82,7 +82,7 @@ a:focus {
   cursor: url("/images/cursorselect.cur"), auto;
 }
 
-.links {
+.links a, .links a:visited{
   color: var(--text-color);
 }
 
