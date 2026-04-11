@@ -85,7 +85,7 @@ function headerHTML() {
           <nav>
             <ul>
               <li><a href="./index.html">Home</a></li>
-              <li><a href="./more-about-me.html">More about me</a></li>
+              <li><a href="./pages/more-about-me.html">More about me</a></li>
             <li>
             </div>
           </nav>
@@ -94,7 +94,8 @@ function headerHTML() {
         <div class="sidebar-section">
           <div class="sidebar-title">Quote</div>
           <blockquote>
-            <p>"Boop" - by Me</p>
+            <p>Maybe Icarus wanted to fall. </br>Maybe he wanted to graze Apollo's light ans Poseidon's deepest grains of sand
+            - ACJ</p>
           </blockquote>
         </div>
 
@@ -113,7 +114,7 @@ function headerHTML() {
         </div>
         
         <marquee>
-        <a href="./my-site.html">
+        <a href="./pages/my-site.html">
         	<img src="/images/stamps/nomnomnom.gif" alt="nomnomnom">
         	<img src="/images/stamps/rawr.gif" alt="rawr">
         	<img src="/images/stamps/clubpenguin.jpg" alt="clubpenguin">

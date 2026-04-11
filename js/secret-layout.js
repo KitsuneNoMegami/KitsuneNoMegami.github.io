@@ -84,7 +84,7 @@ function headerHTML() {
         <div class="sidebar-title">Navigation</div>
           <nav>
             <ul>
-              <li><a href="./index.html">Portfolio</a></li>
+              <li><a href="../index.html">Portfolio</a></li>
               <li><a href="./my-site.html">Home</a></li>
               <li><a href="./resources.html">Resources</a></li>
               <li><a href="./creations.html">My creations</a></li>
