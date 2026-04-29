@@ -84,7 +84,7 @@ function headerHTML() {
         <div class="sidebar-title">Navigation</div>
           <nav>
             <ul>
-              <li><a href="./index.html">Home</a></li>
+              <li><a href="/index.html">Home</a></li>
               <li><a href="./pages/more-about-me.html">More about me</a></li>
             <li>
             </div>
@@ -114,7 +114,7 @@ function headerHTML() {
         </div>
         
         <marquee>
-        <a href="./pages/my-site.html">
+        <a href="/pages/my-site.html">
         	<img src="/images/stamps/nomnomnom.gif" alt="nomnomnom">
         	<img src="/images/stamps/rawr.gif" alt="rawr">
         	<img src="/images/stamps/clubpenguin.jpg" alt="clubpenguin">
