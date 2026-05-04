@@ -1,0 +1,72 @@
+@import "/css/base.css";
+
+/*? Description */
+.description {
+  margin-bottom: -30%;
+  border: 2px dashed var(--sidebar-background-color);
+  padding: 10px;
+  width: 85%;
+}
+
+.description p {
+  width: 80%;
+}
+
+.tab {
+  margin-left: 1.5em;
+}
+
+/*Picture*/
+.pp {
+  display: flex;
+  flex-flow: column;
+  align-items: end;
+}
+
+.pp blockquote {
+  width: fit-content;
+}
+
+/*FAQ*/
+
+.faq-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-title {
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.answer {
+  padding: 10px;
+  font-size: 1rem;
+  color: #555;
+  display: none;
+}
+
+.faq-question.active .icon {
+  content: "-";
+}

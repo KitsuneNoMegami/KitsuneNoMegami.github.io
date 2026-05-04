@@ -29,6 +29,7 @@
   --sidebar-width: 200px;
 }
 
+
 /* -------------------------------------------------------- */
 /* BASICS */
 /* -------------------------------------------------------- */
@@ -88,53 +89,6 @@ a:focus {
   color: var(--text-color);
 }
 
-.portfolio-gallery {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.portfolio-gallery div {
-  box-sizing: border-box;
-  width: calc(33% - 10px);
-  margin: 5px;
-  border: 5px solid;
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio-gallery div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.portfolio-gallery div .desc {
-  position: absolute;
-  bottom: 15px;
-  left: 0;
-  width: 100%;
-  box-sizing: border-box;
-  background: rgb(201, 200, 200);
-  color: black;
-  text-align: center;
-  padding: 5px 10px;
-  font-size: 15px;
-  opacity: 0;
-  transform: translateY(100px);
-  transition: transform 0.4s ease, opacity 0.5s ease;
-  font-family: var(--font);
-}
-
-.portfolio-gallery div:hover span {
-  opacity: 1;
-  transform: none;
-}
-
-.portfolio-gallery div:hover img {
-  transform: scale(1.35) rotate(10deg);
-}
-
 /* -------------------------------------------------------- */
 /* LAYOUT */
 /* -------------------------------------------------------- */
@@ -153,6 +107,38 @@ main {
   background: var(--content-background-color);
   border: var(--border);
   border-radius: var(--round-borders);
+}
+
+/* -------------------------------------------------------- */
+/* CONTENT IMAGES */
+/* -------------------------------------------------------- */
+
+.image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.full-width-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.images {
+  display: flex;
+  width: calc(100% + 5px + 5px);
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.images img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  margin: 0;
+  overflow: hidden;
 }
 
 /* -------------------------------------------------------- */
@@ -304,7 +290,7 @@ iframe {
 }
 
 /* -------------------------------------------------------- */
-/* FOOTER */
+/*? FOOTER */
 /* -------------------------------------------------------- */
 
 footer {
@@ -322,8 +308,9 @@ footer {
   margin-top: -2%;
 }
 
+
 /* -------------------------------------------------------- */
-/* NAVIGATION */
+/*? NAVIGATION */
 /* -------------------------------------------------------- */
 
 
@@ -359,7 +346,7 @@ nav ul summary {
 
 
 /* -------------------------------------------------------- */
-/* CONTENT */
+/*? CONTENT */
 /* -------------------------------------------------------- */
 
 main {
@@ -426,7 +413,14 @@ main hr {
   margin: 1.5em 0;
 }
 
-/* HEADINGS: */
+
+.tab {
+    margin-left: 1.5em;
+}
+
+/* -------------------------------------------------------- */
+/*? HEADINGS: */
+/* -------------------------------------------------------- */
 
 main h1,
 main h2,
@@ -491,121 +485,6 @@ main h6 {
   padding-left: 0.75em;
 }
 
-/*Description*/
-.description {
-  margin-bottom: -30%;
-  border: 2px dashed var(--sidebar-background-color);
-  padding: 10px;
-  width: 85%;
-}
-
-.description p {
-  width: 80%;
-}
-
-.tab {
-  margin-left: 1.5em;
-}
-
-/*Picture*/
-.pp {
-  display: flex;
-  flex-flow: column;
-  align-items: end;
-}
-
-.pp blockquote {
-  width: fit-content;
-}
-
-/*FAQ*/
-
-.faq-section {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.faq-title {
-  margin-bottom: 20px;
-}
-
-.faq-item {
-  border-bottom: 1px solid #ddd;
-  padding: 10px 0;
-}
-
-.faq-question {
-  background: none;
-  border: none;
-  width: 100%;
-  text-align: left;
-  font-size: 1.2rem;
-  cursor: pointer;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-
-.answer {
-  padding: 10px;
-  font-size: 1rem;
-  color: #555;
-  display: none;
-}
-
-.faq-question.active .icon {
-  content: "-";
-}
-
-/* -------------------------------------------------------- */
-/* CONTENT IMAGES */
-/* -------------------------------------------------------- */
-
-.image {
-  display: block;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-}
-
-.full-width-image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.images {
-  display: flex;
-  width: calc(100% + 5px + 5px);
-  margin-left: -5px;
-  margin-right: -5px;
-}
-
-.images img {
-  width: 100%;
-  height: auto;
-  padding: 5px;
-  margin: 0;
-  overflow: hidden;
-}
-
-
-.tag {
-  font-size: 12px;
-  background: var(--tag-color);
-  border-radius: 30px;
-  width: fit-content;
-  padding-left: 6px;
-  padding-right: 6px;
-
-}
 
 /* -------------------------------------------------------- */
 /* ACCESSIBILITY */
@@ -634,7 +513,7 @@ main h6 {
 }
 
 /* -------------------------------------------------------- */
-/* MOBILE RESPONSIVE */
+/*? MOBILE RESPONSIVE */
 /* -------------------------------------------------------- */
 
 /* CSS Code for devices < 800px */
