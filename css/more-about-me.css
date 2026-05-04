@@ -2,7 +2,7 @@
 
 /*? Description */
 .description {
-  margin-bottom: -30%;
+  margin-bottom: -27%;
   border: 2px dashed var(--sidebar-background-color);
   padding: 10px;
   width: 85%;
@@ -36,10 +36,6 @@
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.faq-title {
-  margin-bottom: 20px;
 }
 
 .faq-item {
