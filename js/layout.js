@@ -85,7 +85,7 @@ function headerHTML() {
           <nav>
             <ul>
               <li><a href="/index.html">Home</a></li>
-              <li><a href="./pages/more-about-me.html">More about me</a></li>
+              <li><a href="/pages/more-about-me.html">More about me</a></li>
             <li>
             </div>
           </nav>
