@@ -90,6 +90,33 @@
                                 <a href="https://tamanotchi.world/31404c"><img src="https://tamanotchi.world/i/31404"
                                                 alt="It's tamaNOTchi! Click to feed!"></a>
                         </div>
+                        <div class="sidebar-section">
+                                <div class="sidebar-title">Moon Phase</div>
+                                <div id="contain_moon" style="text-align:center;padding-top:4px;padding-bottom:4px;">
+                                        <div style="font-weight:bold"></div>
+                                        <div
+                                                style="margin-top:-5px;margin-bottom:-11px;padding:23px;filter:drop-shadow(0 0 23px hsl(9,100%,76%))">
+                                        </div>
+                                        <div id="text">.</div>
+                                        <div style="font-size:small"></div>
+                                </div>
+                                <script>(function () {
+                                                var d = new Date().getDate();
+                                                var m = document.querySelectorAll("#contain_moon div");
+                                                var a = new XMLHttpRequest(); var url = "https://www.icalendar37.net/lunar/api/?lang=en&month=" + (new Date().getMonth() + 1) + "&year=" + (new Date().getFullYear()) + "&size=75&lightColor=rgb(248,243,220)&shadeColor=rgb(127,127,127)&LDZ=" + new Date(new Date().getFullYear(), new Date().getMonth(), 1) / 1000 + "";
+                                                m[1].style.height = "75px";
+                                                a.onreadystatechange = function () {
+                                                        if (a.readyState == 4 && a.status == 200) {
+                                                                var b = JSON.parse(a.responseText);
+                                                                m[1].innerHTML = b.phase[d].svg;
+                                                                if (typeof moon_widget_loaded == "function") moon_widget_loaded(b);
+                                                                m[2].innerHTML = b.phase[d].npWidget
+                                                        }
+                                                };
+                                                a.open("GET", url, true);
+                                                a.send()
+                                        })()</script>
+                        </div>
                 </aside>
 
 

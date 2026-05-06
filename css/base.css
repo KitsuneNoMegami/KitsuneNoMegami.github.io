@@ -247,6 +247,14 @@ iframe {
   margin-left: 35%;
 }
 
+#contain_moon{
+    margin-top: -10%;
+}
+
+#contain_moon> #text{
+    margin-top: 35%;
+}
+
 
 /* Sidebar Blockquote: */
 
@@ -415,7 +423,7 @@ main hr {
 
 
 .tab {
-    margin-left: 1.5em;
+  margin-left: 1.5em;
 }
 
 /* -------------------------------------------------------- */
