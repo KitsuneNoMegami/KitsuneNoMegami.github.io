@@ -247,12 +247,12 @@ iframe {
   margin-left: 35%;
 }
 
-#contain_moon{
-    margin-top: -10%;
+#contain_moon {
+  margin-top: -10%;
 }
 
-#contain_moon> #text{
-    margin-top: 35%;
+#contain_moon>#text {
+  margin-top: 35%;
 }
 
 
@@ -324,7 +324,7 @@ footer {
 
 
 nav ul {
-  margin: 0 -5px;
+  margin: 0 -10px;
   padding: 0;
   list-style: none;
   user-select: none;
@@ -340,8 +340,6 @@ nav>ul li>strong {
   display: inline-block;
 }
 
-
-
 nav>ul li>a.active,
 nav>ul li>details.active summary {
   font-weight: bold;
@@ -351,6 +349,13 @@ nav ul summary {
   cursor: pointer;
 }
 
+li>a {
+  margin-left: 10%;
+}
+
+details {
+  margin-bottom: 5%;
+}
 
 
 /* -------------------------------------------------------- */
