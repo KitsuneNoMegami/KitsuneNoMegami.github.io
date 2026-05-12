@@ -1,23 +1,23 @@
-document.addEventListener("DOMContentLoaded", () =>{
+document.addEventListener("DOMContentLoaded", () => {
   const questions = document.querySelectorAll(".faq-question");
-  
+
   questions.forEach(question => {
-    question.addEventListener("click", ()=> {
+    question.addEventListener("click", () => {
       question.classList.toggle("active");
       const answer = question.nextElementSibling;
       const icon = question.querySelector(".icon");
-      
+
       if (answer.style.display === "block") {
         answer.style.display = "none";
         icon.textContent = "+";
       } else {
         answer.style.display = "block";
-        icon.textContent ="-";
+        icon.textContent = "-";
       }
     });
   });
-  
-  
+
+
 });
 
 
@@ -81,14 +81,36 @@ function headerHTML() {
         
         <!-- NAVIGATION -->
         <div class="sidebar-section">
-        <div class="sidebar-title">Navigation</div>
+          <div class="sidebar-title">Navigation</div>
           <nav>
             <ul>
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/pages/more-about-me.html">More about me</a></li>
-            <li>
-            </div>
+              <li>
+                <li><a href="/index.html">Home</a></li>
+                <details data-id="Personnal">
+                  <summary>Personnal</summary>
+                  <ul>
+                      <li><a href="/pages/more-about-me.html">More about me</a></li>
+                      <li><a href="/">Picrew</a></li>
+                  </ul>
+                </details>
+                <details data-id="Hobbies">
+                  <summary>Hobbies</summary>
+                  <ul>
+                      <li><a href="/pages/creations.html">Crochet</a></li>
+                      <li><a href="/">Pokemon</a></li>
+                  </ul>
+                </details>
+                <details data-id="Website">
+                  <summary>Website</summary>
+                  <ul>
+                      <li><a href="/pages/resources.html">Resources</a></li>
+                      <li><a href="/pages/surprise.html">Guestbook</a></li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
           </nav>
+          </div>
         </div>
         
         <div class="sidebar-section">
