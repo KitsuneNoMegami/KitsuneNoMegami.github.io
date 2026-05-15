@@ -1,15 +1,14 @@
 @import "/css/base.css";
-
 /*? Description */
 .description {
-  margin-bottom: -27%;
+  margin-bottom: -33%;
   border: 2px dashed var(--sidebar-background-color);
-  padding: 10px;
-  width: 85%;
+  padding: 20px;
+  width: 90%;
 }
 
 .description p {
-  width: 80%;
+  width: 79%;
 }
 
 .tab {
@@ -25,6 +24,7 @@
 
 .pp blockquote {
   width: fit-content;
+  background-color: rgb(221, 210, 210);
 }
 
 /*FAQ*/
