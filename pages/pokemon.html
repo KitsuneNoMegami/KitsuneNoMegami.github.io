@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Beth's Corner</title>
+
+    <meta content="My personal website!" name="description" />
+
+    <!-- Setting character encoding and viewport size. Do not remove. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+    <!-- CSS: -->
+    <link href="/css/pokemon.css" rel="stylesheet" />
+
+    <!-- JavaScript: -->
+    <script src="/js/layout.js"></script>
+
+
+</head>
+
+<body>
+    <a href="#content" id="skip-to-content-link">Skip to content</a>
+
+    <div class="layout">
+        <img src="/images/name.gif" name="websiteTitle"></img>
+
+        <main id="content">
+            <!-- =============================================== -->
+            <!-- MAIN CONTENT -->
+            <!-- =============================================== -->
+
+            <div class="title">
+                <img src="/images/pokemon/pokedex.png" width="35%">
+            </div>
+
+
+            <div class="sprites">
+                <p>
+                    <span class="tab"></span>I can't really explain what makes a Pokémon my favourite.
+                    Sometimes it's their design, sometimes their personality, or even their power.
+                    That's also why I still don't know which Pokémon type is my favourite.
+                    I quite like the Fire type,it's cool as hell, but lots of Water-type Pokémon have really
+                    brilliant designs.<br>
+                    And look at these little cuties… so cute.
+                    <br>
+                    <br>
+                    <span class="tab"></span>My all-time favorite pokemon is Quagsire.
+                    Why ? I don't know, he's cute, he has no brain et perfect for bigs hugs.
+                    And look at this face, not a single tought...(he's the big blue guy in the center)
+                    <br>
+                    <br>
+                    <strong>Note :</strong> I don't like blue but I love blue pokemons ( • - • )?
+                </p>
+
+
+                <img src="/images/pokemon/Mareep.png" alt="Mareep">
+                <img src="/images/pokemon/Braixen.png" alt="Braixen">
+                <img src="/images/pokemon/Buneary.png" alt="Buneary">
+                <img src="/images/pokemon/Deino.png" alt="Deino">
+                <img src="/images/pokemon/Dratini.png" alt="Dratini">
+                <img src="/images/pokemon/Dwebble.png" alt="Dwebble">
+                <img src="/images/pokemon/Xerneas.png" alt="Xerneas">
+                <img src="/images/pokemon/Electrike.png" alt="Electrike">
+                <img src="/images/pokemon/Growlithe.png" alt="Growlithe">
+                <img src="/images/pokemon/Lapras.png" alt="Lapras">
+                <img src="/images/pokemon/Mudkip.png" alt="Mudkip">
+                <img src="/images/pokemon/Phanpy.png" alt="Phanpy">
+                <img src="/images/pokemon/Politoed.png" alt="Politoed">
+                <img src="/images/pokemon/Ponyta.png" alt="Ponyta">
+                <img src="/images/pokemon/Pumpkaboo.png" alt="Pumpkaboo">
+                <img src="/images/pokemon/Totodile.png" alt="Totodile">
+                <img src="/images/pokemon/Quagsire.png" alt="Quagsire">
+                <img src="/images/pokemon/Quilava.png" alt="Quilava">
+                <img src="/images/pokemon/Shinx.png" alt="Shinx">
+                <img src="/images/pokemon/Shiny_Politoed.png" alt="Shiny_Politoed">
+                <img src="/images/pokemon/Cubone.png" alt="Cubone">
+                <img src="/images/pokemon/Slowpoke.png" alt="Slowpoke">
+                <img src="/images/pokemon/Sunny_Cherrim.png" alt="Sunny_Cherrim">
+                <img src="/images/pokemon/Tepig.png" alt="Tepig">
+                <img src="/images/pokemon/Vaporeon.png" alt="Vaporeon">
+                <img src="/images/pokemon/Abra.png" alt="Abra">
+                <img src="/images/pokemon/Lickitung.png" alt="Lickitung">
+                <img src="/images/pokemon/Wooloo.png" alt="Wooloo">
+                <img src="/images/pokemon/Yamask.png" alt="Yamask">
+                <img src="/images/pokemon/Zoroark.png" alt="Zoroark">
+            </div>
+
+            <p class="license">
+                © Pokémon. © Nintendo/Creatures Inc./Game Freak.
+                <br>
+                This page is a fan initiative and is not officially affiliated.
+            </p>
+        </main>
+
+
+
+        <aside class="right-sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-title">TamaNOTchi</div>
+                <a href="https://tamanotchi.world/31404c"><img src="https://tamanotchi.world/i/31404"
+                        alt="It's tamaNOTchi! Click to feed!"></a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-title">Moon Phase</div>
+                <div id="contain_moon" style="text-align:center;padding-top:4px;padding-bottom:4px;">
+                    <div style="font-weight:bold"></div>
+                    <div
+                        style="margin-top:-5px;margin-bottom:-11px;padding:23px;filter:drop-shadow(0 0 23px hsl(9,100%,76%))">
+                    </div>
+                    <div id="text">.</div>
+                    <div style="font-size:small"></div>
+                </div>
+                <script>(function () {
+                        var d = new Date().getDate();
+                        var m = document.querySelectorAll("#contain_moon div");
+                        var a = new XMLHttpRequest(); var url = "https://www.icalendar37.net/lunar/api/?lang=en&month=" + (new Date().getMonth() + 1) + "&year=" + (new Date().getFullYear()) + "&size=75&lightColor=rgb(248,243,220)&shadeColor=rgb(127,127,127)&LDZ=" + new Date(new Date().getFullYear(), new Date().getMonth(), 1) / 1000 + "";
+                        m[1].style.height = "75px";
+                        a.onreadystatechange = function () {
+                            if (a.readyState == 4 && a.status == 200) {
+                                var b = JSON.parse(a.responseText);
+                                m[1].innerHTML = b.phase[d].svg;
+                                if (typeof moon_widget_loaded == "function") moon_widget_loaded(b);
+                                m[2].innerHTML = b.phase[d].npWidget
+                            }
+                        };
+                        a.open("GET", url, true);
+                        a.send()
+                    })()</script>
+            </div>
+        </aside>
+
+
+        <!-- Add any additional Javascript code (<script></script>) here. -->
+</body>
+
+</html>
