@@ -85,19 +85,14 @@ function headerHTML() {
           <nav>
             <ul>
               <li>
-                <li><a href="/index.html">Home</a></li>
-                <details data-id="Personnal">
-                  <summary>Personnal</summary>
-                  <ul>
-                      <li><a href="/pages/more-about-me.html">More about me</a></li>
-                      <li><a href="/">Picrew</a></li>
-                  </ul>
-                </details>
+                <li><a href="/index.html" id="nav-title">Home</a></li>
+                <li><a href="/pages/more-about-me.html" id="nav-title">More about me</a></li>
                 <details data-id="Hobbies">
                   <summary>Hobbies</summary>
                   <ul>
                       <li><a href="/pages/creations.html">Crochet</a></li>
-                      <li><a href="/">Pokemon</a></li>
+                      <li><a href="/pages/pokemon.html">Pokemon</a></li>
+                      <li><a href="/pages/surprise.html">Picrew</a></li>
                   </ul>
                 </details>
                 <details data-id="Website">
@@ -136,16 +131,25 @@ function headerHTML() {
         </div>
         
         <marquee>
-        <a href="/pages/my-site.html">
-        	<img src="/images/stamps/nomnomnom.gif" alt="nomnomnom">
-        	<img src="/images/stamps/rawr.gif" alt="rawr">
-        	<img src="/images/stamps/clubpenguin.jpg" alt="clubpenguin">
-        	<img src="/images/stamps/computeralive.png" alt="computeralive">
-         	<img src="/images/stamps/ragequit.gif" alt="ragequit">
-        	<img src="/images/stamps/bubble.gif" alt="bubble">
-        	<img src="/images/stamps/rainbow.gif" alt="rainbow">
-        </marquee>
-        </a>  
+          <img src="/images/stamps/nomnomnom.gif" alt="nomnomnom">
+          <img src="/images/stamps/cherryblossom.png" alt="cherryblossom">
+          <img src="/images/stamps/clubpenguin.jpg" alt="clubpenguin">
+          <img src="/images/stamps/rawr.gif" alt="rawr">
+          <img src="/images/stamps/cows.png" alt="cows">
+          <img src="/images/stamps/mms.gif" alt="mms">
+          <img src="/images/stamps/computeralive.png" alt="computeralive">
+          <img src="/images/stamps/ragequit.gif" alt="ragequit">
+          <img src="/images/stamps/sol.png" alt="sol">
+          <img src="/images/stamps/bubble.gif" alt="bubble">
+          <img src="/images/stamps/rainbow.gif" alt="rainbow">
+          <img src="/images/stamps/cheese.gif" alt="cheese">
+          <img src="/images/stamps/sleepwithplushies.png" alt="sleepwithplushies">
+          <img src="/images/stamps/papercut.gif" alt="papercut">
+          <img src="/images/stamps/leftportail.png" alt="leftportail">
+          <img src="/images/stamps/rightportal.png" alt="rightportal">
+          <img src="/images/stamps/stamponfire.gif" alt="stamponfire">
+          <img src="/images/stamps/wiggly.png" alt="wiggly">
+        </marquee> 
       </aside>`;
 }
 
