@@ -56,3 +56,8 @@
   padding-left: 6px;
   padding-right: 6px;
 }
+
+a{
+  color: var(--text-color);
+  text-decoration: none;
+}

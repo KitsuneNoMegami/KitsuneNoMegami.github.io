@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Pixelated Elegance";
+  src:
+    url("/css/fonts/Elevatia.ttf") format("truetype"),
+    url("/css/fonts/ElevatiaItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* -------------------------------------------------------- */
 /* VARIABLES */
 /* -------------------------------------------------------- */
@@ -11,16 +21,16 @@
   --tag-color: #f9ebe0;
 
   /* Text Colors: */
-  --text-color: #000000;
+  --text-color: #6e400b;
   --sidebar-text-color: #f9ebe0;
   --link-color: #f9ebe0;
   --link-color-hover: #f9e0cd;
   --link-color-active: rgb(255, 221, 191);
 
   /* Text: */
-  --font: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, メイリオ, Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', 'ＭＳ ゴシック', 'MS Gothic', 'Noto Sans CJK JP', TakaoPGothic, sans-serif;
-  --heading-font: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, メイリオ, Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', 'ＭＳ ゴシック', 'MS Gothic', 'Noto Sans CJK JP', TakaoPGothic, sans-serif;
-  --font-size: 14px;
+  --font: "Pixelated Elegance", 'Hiragino Kaku Gothic Pro', Osaka, 'MS Gothic', 'Noto Sans CJK JP', TakaoPGothic, sans-serif;
+  --heading-font:"Pixelated Elegance", 'Hiragino Kaku Gothic Pro', Osaka, 'MS Gothic', 'Noto Sans CJK JP', TakaoPGothic, sans-serif;
+  --font-size: 15px;
 
   /* Other Settings: */
   --margin: 10px;
@@ -67,29 +77,6 @@ mark {
   /* Text highlighted by using the <mark> element */
   text-shadow: 1px 1px 4px var(--link-color);
   background-color: inherit;
-  color: var(--text-color);
-}
-
-/* Links: */
-a {
-  text-decoration: underline;
-}
-
-a,
-a:visited {
-  color: var(--link-color);
-  text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  color: var(--link-color-hover);
-  text-decoration: none;
-  cursor: var(--pointer);
-}
-
-.links a,
-.links a:visited {
   color: var(--text-color);
 }
 
@@ -355,6 +342,8 @@ nav ul summary,
 
 li>a {
   margin-left: 10%;
+  color: var(--link-color);
+  text-decoration: none;
 }
 
 details {
@@ -373,17 +362,6 @@ summary {
 main {
   line-height: 1.5;
   width: 700px;
-}
-
-main a,
-main a:visited {
-  color: var(--link-color);
-}
-
-main a:hover,
-main a:focus {
-  color: var(--link-color-hover);
-  text-decoration-style: wavy;
 }
 
 main p,
@@ -449,7 +427,7 @@ main h3,
 main h4,
 main h5,
 main h6 {
-  font-family: var(--heading-font);
+  font-family: "Pixelated Elegance", "Kuchibue", "rainyhearts", monospace, sans-serif;
   margin-bottom: 0;
   line-height: 1.5;
 }
