@@ -110,9 +110,7 @@ function headerHTML() {
         
         <div class="sidebar-section">
           <div class="sidebar-title">Quote</div>
-          <blockquote>
-            <p>Maybe Icarus wanted to fall. </br>Maybe he wanted to graze Apollo's light ans Poseidon's deepest grains of sand
-            - ACJ</p>
+          <blockquote id="quote">
           </blockquote>
         </div>
 
@@ -214,3 +212,12 @@ function getNesting() {
   if (numberOfSlashes == 1) return "./";
   return "../".repeat(numberOfSlashes - 1);
 }
+
+// QUOTE
+document.addEventListener(
+  'DOMContentLoaded',
+  async () => {
+    const quotesList = await (await fetch('/quotes.json')).json();
+    document.getElementById("quote").innerHTML = quotesList[Math.floor(Math.random() * quotesList.length)];
+  }
+);

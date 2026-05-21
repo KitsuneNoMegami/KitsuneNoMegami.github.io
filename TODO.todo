@@ -1,25 +1,6 @@
 - Faire les routes parce c'est pa bo
-- Changer la couleur des tags de langages
-- awesome links
-
 - Ajout des icons a cote des onglets de navigation
 - Ajouter des tirets ou truc comme ca pour la liste des resources
 - Changer la police d'ecriture de la Quote
-- Diviser le css en plusieurs pages
-
-
-Architecture des pages 
-
-Home : 
-        Projets 
-
-More about me :  
-                Description
-                Profile
-                FAQ 
-
-MY website hide somewhere: 
-            DikDikPic
-            A looooot of stamps
-            Useful links
-            shrine ?
+- Mettre une quote aleatoire
+- Passer au scss
