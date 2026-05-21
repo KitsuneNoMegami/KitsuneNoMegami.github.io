@@ -92,7 +92,7 @@ function headerHTML() {
                   <ul>
                       <li><a href="/pages/creations.html">Crochet</a></li>
                       <li><a href="/pages/pokemon.html">Pokemon</a></li>
-                      <li><a href="/pages/surprise.html">Picrew</a></li>
+                      <li><a href="/pages/picrew.html">Picrew</a></li>
                   </ul>
                 </details>
                 <details data-id="Website">

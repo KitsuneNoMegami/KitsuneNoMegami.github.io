@@ -1,0 +1,15 @@
+@import "/css/base.css";
+
+.picrew-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.picrew-gallery img {
+    box-sizing: border-box;
+    width: calc(25% - 10px);
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+}

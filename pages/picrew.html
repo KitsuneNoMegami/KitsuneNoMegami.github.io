@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Beth's Corner</title>
+
+    <meta content="My personal website!" name="description" />
+
+    <!-- Setting character encoding and viewport size. Do not remove. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+    <!-- CSS: -->
+    <link href="/css/picrew.css" rel="stylesheet" />
+
+    <!-- JavaScript: -->
+    <script src="/js/layout.js"></script>
+
+
+</head>
+
+<body>
+    <a href="#content" id="skip-to-content-link">Skip to content</a>
+
+    <div class="layout">
+        <img src="/images/name.gif" name="websiteTitle"></img>
+
+        <main id="content">
+
+
+            <!-- =============================================== -->
+            <!-- MAIN CONTENT -->
+            <!-- =============================================== -->
+            <section>
+                <h1>Picrew</h1>
+                <p><span class="tab"></span>Picrew is a website that lets you create characters
+                    and much more, giving free rein to your imagination.
+                    I've spent ages on this website, creating characters that look like me or are just really cool, and
+                    even some absolutely adorable little creatures.
+                    <br>
+                </p>
+                <h1>˗ˏˋ Looks like me (maybe) ˎˊ˗</h1>
+                <div class="picrew-gallery">
+                    <img src="/images/picrew/1.png">
+                    <img src="/images/picrew/6.png">
+                    <img src="/images/picrew/8.png">
+                    <img src="/images/picrew/12.png">
+                    <img src="/images/picrew/13.png">
+                    <img src="/images/picrew/15.png">
+                    <img src="/images/picrew/35.png">
+                    <img src="/images/picrew/19.png">
+                    <img src="/images/picrew/21.png">
+                    <img src="/images/picrew/27.png">
+                    <img src="/images/picrew/14.png">
+                    <img src="/images/picrew/44.png">
+                    <img src="/images/picrew/49.png">
+                </div>
+                <br>
+                <h1>˗ˏˋ Cool characters ˎˊ˗</h1>
+                <div class="picrew-gallery">
+                    <img src="/images/picrew/17.png">
+                    <img src="/images/picrew/0.png">
+                    <img src="/images/picrew/18.png">
+                    <img src="/images/picrew/2.png">
+                    <img src="/images/picrew/7.png">
+                    <img src="/images/picrew/25.png">
+                    <img src="/images/picrew/26.png">
+                    <img src="/images/picrew/28.png">
+                    <img src="/images/picrew/29.png">
+                    <img src="/images/picrew/34.png">
+                    <img src="/images/picrew/36.png">
+                    <img src="/images/picrew/38.png">
+                    <img src="/images/picrew/39.png">
+                    <img src="/images/picrew/40.png">
+                    <img src="/images/picrew/47.png">
+                    <img src="/images/picrew/48.png">
+                    <img src="/images/picrew/43.png">
+                </div>
+                <br>
+                <h1>˗ˏˋ Cute creatures ˎˊ˗</h1>
+                <div class="picrew-gallery">
+                    <img src="/images/picrew/24.png">
+                    <img src="/images/picrew/33.png">
+                    <img src="/images/picrew/22.png">
+                    <img src="/images/picrew/32.png">
+                    <img src="/images/picrew/31.png">
+                    <img src="/images/picrew/5.png">
+                    <img src="/images/picrew/30.png">
+                    <img src="/images/picrew/3.png">
+                    <img src="/images/picrew/4.png">
+                    <img src="/images/picrew/37.png">
+                    <img src="/images/picrew/45.png">
+                    <img src="/images/picrew/46.png">
+                </div>
+                <br>
+                <h1>˗ˏˋ Misc ˎˊ˗</h1>
+                <div class="picrew-gallery">
+                    <img src="/images/picrew/9.png">
+                    <img src="/images/picrew/20.png">
+                    <img src="/images/picrew/10.png">
+                    <img src="/images/picrew/23.png">
+                    <img src="/images/picrew/16.png">
+                    <img src="/images/picrew/11.png">
+                </div>
+
+
+            </section>
+
+        </main>
+        <aside class="right-sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-title">TamaNOTchi</div>
+                <a href="https://tamanotchi.world/31404c"><img src="https://tamanotchi.world/i/31404"
+                        alt="It's tamaNOTchi! Click to feed!"></a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-title">Moon Phase</div>
+                <div id="contain_moon" style="text-align:center;padding-top:4px;padding-bottom:4px;">
+                    <div style="font-weight:bold"></div>
+                    <div
+                        style="margin-top:-5px;margin-bottom:-11px;padding:23px;filter:drop-shadow(0 0 23px hsl(9,100%,76%))">
+                    </div>
+                    <div id="text">.</div>
+                    <div style="font-size:small"></div>
+                </div>
+                <script>(function () {
+                        var d = new Date().getDate();
+                        var m = document.querySelectorAll("#contain_moon div");
+                        var a = new XMLHttpRequest(); var url = "https://www.icalendar37.net/lunar/api/?lang=en&month=" + (new Date().getMonth() + 1) + "&year=" + (new Date().getFullYear()) + "&size=75&lightColor=rgb(248,243,220)&shadeColor=rgb(127,127,127)&LDZ=" + new Date(new Date().getFullYear(), new Date().getMonth(), 1) / 1000 + "";
+                        m[1].style.height = "75px";
+                        a.onreadystatechange = function () {
+                            if (a.readyState == 4 && a.status == 200) {
+                                var b = JSON.parse(a.responseText);
+                                m[1].innerHTML = b.phase[d].svg;
+                                if (typeof moon_widget_loaded == "function") moon_widget_loaded(b);
+                                m[2].innerHTML = b.phase[d].npWidget
+                            }
+                        };
+                        a.open("GET", url, true);
+                        a.send()
+                    })()</script>
+            </div>
+        </aside>
+
+
+        <!-- Add any additional Javascript code (<script></script>) here. -->
+</body>
+
+</html>
