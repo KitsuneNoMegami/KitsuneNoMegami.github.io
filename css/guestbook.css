@@ -1,0 +1,14 @@
+@import "/css/base.css";
+
+.hcb-icon,
+.home-desc,
+h3 {
+    display: none;
+}
+
+#aquarium{
+    position: relative;
+    margin-bottom: -10%;
+    margin-left: 35%;
+    width: 17%;
+}
