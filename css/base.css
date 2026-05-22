@@ -29,7 +29,7 @@
 
   /* Text: */
   --font: "Pixelated Elegance", 'Hiragino Kaku Gothic Pro', Osaka, 'MS Gothic', 'Noto Sans CJK JP', TakaoPGothic, sans-serif;
-  --heading-font:"Pixelated Elegance", 'Hiragino Kaku Gothic Pro', Osaka, 'MS Gothic', 'Noto Sans CJK JP', TakaoPGothic, sans-serif;
+  --heading-font: "Pixelated Elegance", 'Hiragino Kaku Gothic Pro', Osaka, 'MS Gothic', 'Noto Sans CJK JP', TakaoPGothic, sans-serif;
   --font-size: 15px;
 
   /* Other Settings: */
@@ -343,7 +343,6 @@ nav ul summary,
 li>a {
   margin-left: 10%;
   color: var(--link-color);
-  text-decoration: none;
 }
 
 details {
@@ -352,6 +351,14 @@ details {
 
 summary {
   margin-bottom: 2%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover{
+  cursor:var(--pointer);
 }
 
 
