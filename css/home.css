@@ -57,7 +57,18 @@
   padding-right: 6px;
 }
 
-a{
+a {
   color: var(--text-color);
   text-decoration: none;
+}
+
+.dinosaure {
+  display: flex;
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 45%;
+}
+
+.dinosaure img {
+  height: 40%;
 }
