@@ -1,0 +1,16 @@
+@import "/css/base.css";
+
+a{
+    color: var(--text-color);
+}
+
+.links{
+    border: 0;
+    border-top: 3px;
+    border-style: dotted;
+    padding-top: 2%;
+    padding-left: 2%;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
