@@ -1,0 +1,26 @@
+@import "/css/base.css";
+
+#title {
+    font-family: "Crochet";
+    font-weight: normal;
+    font-size: 70px;
+    text-align: center;
+}
+
+#time {
+    font-weight: bold;
+}
+
+#plushies {
+    text-align: center;
+
+    img {
+        width: 90%;
+    }
+}
+
+.log {
+    border:0;
+    border-bottom: 3px;
+    border-style: dotted;
+}
