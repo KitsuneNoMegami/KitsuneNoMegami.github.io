@@ -148,7 +148,8 @@ function headerHTML() {
           <img src="/images/stamps/stamponfire.gif" alt="stamponfire">
           <img src="/images/stamps/wiggly.png" alt="wiggly">
         </marquee> 
-      </aside>`;
+      </aside>
+      <aside class="right-sidebar"></aside>`;
 }
 
 function footerHTML() {
@@ -229,6 +230,6 @@ if (!window.hcb_user) { hcb_user = {}; }
     l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"),
     h = "https://www.htmlcommentbox.com";
   s.setAttribute("type", "text/javascript");
-  s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B")+"&mod=%241%24wq1rdBcg%24NACPueU.r0OSn70BUBG0K1"+"&opts=16798&num=10&ts=1779454163371");
+  s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&mod=%241%24wq1rdBcg%24NACPueU.r0OSn70BUBG0K1" + "&opts=16798&num=10&ts=1779454163371");
   if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s);
 })();

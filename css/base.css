@@ -26,6 +26,7 @@
   --link-color: #f9ebe0;
   --link-color-hover: #f9e0cd;
   --link-color-active: rgb(255, 221, 191);
+  --border-color: #430b6e;
 
   /* Text: */
   --font: "Pixelated Elegance", 'Hiragino Kaku Gothic Pro', Osaka, 'MS Gothic', 'Noto Sans CJK JP', TakaoPGothic, sans-serif;
@@ -56,7 +57,7 @@
 body {
   display: flex;
   align-items: flex-start;
-  margin-left: 20%;
+  margin-left: 19.5%;
   min-height: 100vh;
   font-size: var(--font-size);
   padding: var(--margin);
@@ -304,7 +305,6 @@ footer {
   color: var(--background-color);
   font-family: var(--font);
   text-align: center;
-  margin-top: -2%;
 }
 
 
@@ -357,8 +357,8 @@ a {
   text-decoration: none;
 }
 
-a:hover{
-  cursor:var(--pointer);
+a:hover {
+  cursor: var(--pointer);
 }
 
 
