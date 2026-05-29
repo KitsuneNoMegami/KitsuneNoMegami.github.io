@@ -166,7 +166,7 @@ function footerHTML() {
 
       <footer>
             <div>
-            <p><img src="/images/noAI.gif"></br>
+            <p><img src="/images/gif/noAI.gif"></br>
             © 2025 Beth, all rights reserved ♡</p>
             </div>
       </footer>`;
