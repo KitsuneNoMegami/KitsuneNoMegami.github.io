@@ -68,9 +68,9 @@ function headerHTML() {
       <!-- =============================================== -->
       <!-- HEADER -->
       <!-- =============================================== -->
-      
-
-	  
+      <header>
+        <img src="/images/gif/name.gif" name="websiteTitle" id="websiteTitle" align="left">
+      </header>
         
       <!-- =============================================== -->
       <!-- LEFT SIDEBAR -->
