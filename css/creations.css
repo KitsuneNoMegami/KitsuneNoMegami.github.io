@@ -20,7 +20,13 @@
 }
 
 .log {
-    border:0;
+    border: 0;
     border-bottom: 3px;
     border-style: dotted;
+}
+
+#img {
+    width: 30%;
+    height: auto;
+    cursor: pointer;
 }
