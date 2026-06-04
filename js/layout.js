@@ -54,6 +54,64 @@ function loadLayoutByPetraPixel() {
   mainEl.insertAdjacentHTML("beforebegin", headerHTML());
   mainEl.insertAdjacentHTML("afterend", footerHTML());
   giveActiveClassToCurrentPage();
+  loadWidgetScripts();
+}
+
+
+function loadWidgetScripts() {
+  //! Moon
+  const moonScript = document.createElement('script');
+  moonScript.textContent = `
+    (function () {
+      var d = new Date().getDate();
+      var m = document.querySelectorAll("#contain_moon div");
+      var a = new XMLHttpRequest();
+      var url = "https://www.icalendar37.net/lunar/api/?lang=en&month=" + (new Date().getMonth() + 1) + "&year=" + (new Date().getFullYear()) + "&size=75&lightColor=rgb(248,243,220)&shadeColor=rgb(127,127,127)&LDZ=" + new Date(new Date().getFullYear(), new Date().getMonth(), 1) / 1000;
+      m[1].style.height = "75px";
+      a.onreadystatechange = function () {
+        if (a.readyState == 4 && a.status == 200) {
+          var b = JSON.parse(a.responseText);
+          m[1].innerHTML = b.phase[d].svg;
+          if (typeof moon_widget_loaded == "function") moon_widget_loaded(b);
+          m[2].innerHTML = b.phase[d].npWidget;
+        }
+      };
+      a.open("GET", url, true);
+      a.send();
+    })()`;
+  document.body.appendChild(moonScript);
+
+  //! Women of the internet
+  const womenscript1 = document.createElement('script');
+  womenscript1.src = "https://womenoftheinternet.neocities.org/files/onionring-variables.js";
+  document.body.appendChild(womenscript1);
+
+  const womenscript2 = document.createElement('script');
+  womenscript2.src = "https://womenoftheinternet.neocities.org/files/soft-badge.js";
+  document.body.appendChild(womenscript2);
+
+  //! Guestbook
+  if (!document.getElementById('HCB_comment_box')) return;
+  window.hcb_user = { PAGE: window.location.href };
+
+
+  const hcbScript = document.createElement('script');
+  hcbScript.type = 'text/javascript';
+  hcbScript.id = 'hcb';
+  hcbScript.textContent = `
+    if (!window.hcb_user) { hcb_user = {}; }
+    (function() {
+      var s = document.createElement("script"),
+          l = hcb_user.PAGE || (" " + window.location).replace(/'/g, "%27"),
+          h = "https://www.htmlcommentbox.com";
+      s.setAttribute("type", "text/javascript");
+      s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") 
+        + "&mod=%241%24wq1rdBcg%24NACPueU.r0OSn70BUBG0K1"
+        + "&opts=16798&num=10&ts=1780562333100");
+      if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s);
+    })();
+  `;
+  document.body.appendChild(hcbScript);
 }
 
 const nesting = getNesting();
@@ -125,6 +183,10 @@ function headerHTML() {
           <div class="site-button">
           	<div><a href="https://github.com/KitsuneNoMegami"><img src="/images/buttonrepositoy.gif" alt="buttonrepository"></a></div>
             <div><a href="https://boxd.it/bOZFp"><img src="/images/letterboxd.gif"  alt="buttonletterboxd"></a></div>
+            <div id='women-web'>
+            </div>  
+
+ 
           </div>
         </div>
         
@@ -149,7 +211,24 @@ function headerHTML() {
           <img src="/images/stamps/wiggly.png" alt="wiggly">
         </marquee> 
       </aside>
-      <aside class="right-sidebar"></aside>`;
+      <aside class="right-sidebar">
+              <div class="sidebar-section">
+                      <div class="sidebar-title">TamaNOTchi</div>
+                      <a href="https://tamanotchi.world/31404c"><img src="https://tamanotchi.world/i/31404"
+                                      alt="It's tamaNOTchi! Click to feed!"></a>
+              </div>
+              <div class="sidebar-section">
+                      <div class="sidebar-title">Moon Phase</div>
+                      <div id="contain_moon" style="text-align:center;padding-top:4px;padding-bottom:4px;">
+                              <div style="font-weight:bold"></div>
+                              <div
+                                      style="margin-top:-5px;margin-bottom:-11px;padding:23px;filter:drop-shadow(0 0 23px hsl(9,100%,76%))">
+                              </div>
+                              <div id="text">.</div>
+                              <div style="font-size:small"></div>
+                      </div>
+              </div>
+      </aside>`;
 }
 
 function footerHTML() {
