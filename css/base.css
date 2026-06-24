@@ -346,6 +346,14 @@ nav ul summary,
   font-weight: bold;
 }
 
+nav  img {
+  display: inline-block;
+  animation: floatingImage 1s ease infinite;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  margin-left: -0.5em;
+}
+
 li>a {
   color: var(--link-color);
 }
@@ -365,14 +373,6 @@ a {
 a:hover {
   cursor: var(--pointer);
 }
-
-  img {
-    display: inline-block;
-    animation: floatingImage 1s ease infinite;
-    vertical-align: middle;
-    margin-right: 0.5em;
-    margin-left: -0.5em;
-  }
 
 
 /* -------------------------------------------------------- */

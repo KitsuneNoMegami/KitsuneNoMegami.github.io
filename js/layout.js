@@ -224,10 +224,6 @@ function headerHTML() {
                               <div style="font-size:small"></div>
                       </div>
               </div>
-              <div class="sidebar-section">
-                <div class="sidebar-title">Webrings</div>
-                      <div id='women-web'></div>  
-              </div>
       </aside>`;
 }
 
