@@ -143,21 +143,21 @@ function headerHTML() {
           <nav>
             <ul>
               <li>
-                <li><a href="/index.html" id="nav-title">Home</a></li>
-                <li><a href="/pages/more-about-me.html" id="nav-title">More about me</a></li>
+                <li><a href="/index.html" id="nav-title"><img width="25" src="/images/puce/home.gif" alt arial-hidden="true">Home</a></li>
+                <li><a href="/pages/more-about-me.html" id="nav-title"><img width="25"src="/images/puce/eye.gif" alt arial-hidden="true">More about me</a></li>
                 <details data-id="Hobbies">
                   <summary>Hobbies</summary>
                   <ul>
-                      <li><a href="/pages/creations.html">Crochet</a></li>
-                      <li><a href="/pages/pokemon.html">Pokemon</a></li>
-                      <li><a href="/pages/picrew.html">Picrew</a></li>
+                      <li><a href="/pages/creations.html"><img width="25"src="/images/puce/bear.gif" alt arial-hidden="true">Crochet</a></li>
+                      <li><a href="/pages/pokemon.html"><img width="25"src="/images/puce/pokemon.gif" alt arial-hidden="true">Pokemon</a></li>
+                      <li><a href="/pages/picrew.html"><img width="25" src="/images/puce/picrew.gif" alt arial-hidden="true">Picrew</a></li>
                   </ul>
                 </details>
                 <details data-id="Website">
                   <summary>Website</summary>
                   <ul>
-                      <li><a href="/pages/resources.html">Resources</a></li>
-                      <li><a href="/pages/surprise.html">Guestbook</a></li>
+                      <li><a href="/pages/resources.html"><img width="25" src="/images/puce/ressources.gif" alt arial-hidden="true">Resources</a></li>
+                      <li><a href="/pages/surprise.html"><img width="25"src="/images/puce/guestbook.gif" alt arial-hidden="true">Guestbook</a></li>
                   </ul>
                 </details>
               </li>
@@ -182,11 +182,7 @@ function headerHTML() {
           <div class="sidebar-title">Links</div>
           <div class="site-button">
           	<div><a href="https://github.com/KitsuneNoMegami"><img src="/images/buttonrepositoy.gif" alt="buttonrepository"></a></div>
-            <div><a href="https://boxd.it/bOZFp"><img src="/images/letterboxd.gif"  alt="buttonletterboxd"></a></div>
-            <div id='women-web'>
-            </div>  
-
- 
+            <div><a href="https://boxd.it/bOZFp"><img src="/images/letterboxd.gif"  alt="buttonletterboxd"></a></div> 
           </div>
         </div>
         
@@ -227,6 +223,10 @@ function headerHTML() {
                               <div id="text">.</div>
                               <div style="font-size:small"></div>
                       </div>
+              </div>
+              <div class="sidebar-section">
+                <div class="sidebar-title">Webrings</div>
+                      <div id='women-web'></div>  
               </div>
       </aside>`;
 }
