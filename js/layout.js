@@ -21,8 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-
 document.addEventListener("DOMContentLoaded", function () {
   // Page has finished loading. Now, do things.
   loadLayoutByPetraPixel();
@@ -174,7 +172,7 @@ function headerHTML() {
 
         <div class="sidebar-section"> 
           <div class="sidebar-title">My time</div>
-          <iframe src="https://free.timeanddate.com/clock/iac6mi2d/n195/tlfr2/fn6/fcf9ebe0/tct/pct/ta1" frameborder="0" width="170" height="22" allowtransparency="true"></iframe>
+          <iframe src="https://free.timeanddate.com/clock/n1216/tlfr2/fn6/fcf9ebe0/tct/pct/ta1" frameborder="0" width="170" height="22" allowtransparency="true"></iframe>
         </div>  
              
         
