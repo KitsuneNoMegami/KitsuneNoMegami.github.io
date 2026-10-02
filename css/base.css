@@ -346,7 +346,7 @@ nav ul summary,
   font-weight: bold;
 }
 
-nav  img {
+nav img {
   display: inline-block;
   animation: floatingImage 1s ease infinite;
   vertical-align: middle;
@@ -539,61 +539,24 @@ main h6 {
 /* CSS Code for devices < 800px */
 @media (max-width: 800px) {
   body {
-    font-size: 14px;
+    font-size: 9px;
   }
 
   .layout {
-    width: 100%;
-    grid-template: "header" auto "leftSidebar" auto "main" auto "footer" auto / 1fr;
+    grid-template: "header" auto "leftSidebar" auto "main" auto/1fr;
     /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
   }
-
 
   .right-sidebar {
     display: none;
   }
 
-  aside {
-    border-bottom: 1px solid;
-    padding: 9px;
-    font-size: 0.9em;
-  }
-
-
-  nav {
-    padding: 0;
-  }
-
-  nav>ul {
-    padding-top: 0.5em;
-  }
-
-  nav>ul li>a,
-  nav>ul li>details summary,
-  nav>ul li>strong {
-    padding: 0.5em;
-  }
-
-  main {
-    max-height: none;
-    padding: 15px;
-  }
-
-  .images {
-    flex-wrap: wrap;
-  }
-
-  .images img {
-    width: 100%;
-  }
-
-  @media (max-width: 800px) {
-    .portfolio-gallery div {
-      width: calc(50% - 10px);
-    }
+  marquee {
+    display: none;
   }
 
   #skip-to-content-link {
     font-size: 1rem;
   }
 }
+

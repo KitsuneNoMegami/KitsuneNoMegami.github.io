@@ -1,7 +1,7 @@
 - Faire les routes parce c'est pa bo
-- Ajout des icons a cote des onglets de navigation
-- Ajouter des tirets ou truc comme ca pour la liste des resources
 - Changer la police d'ecriture de la Quote
-- Mettre une quote aleatoire
 - Passer au scss
 - Remplacer les texte emoji par un clipboard
+- page pour les revues des films/musiques/ livres
+-Faire un fichier annexe pour le script js
+ document.write("<script src='"+document.currentScript.src+"/?clt="+(localStorage.getItem('compteurlt')||0)+"&ca="+(localStorage.getItem('compteuraut')||0)+"&s="+encodeURIComponent(window.location.hostname)+"'></script>");
