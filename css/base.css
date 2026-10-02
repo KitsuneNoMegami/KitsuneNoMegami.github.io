@@ -164,6 +164,7 @@ header {
 .header-image img {
   width: 100%;
   height: auto;
+  float: left;
 }
 
 /* -------------------------------------------------------- */
@@ -187,6 +188,11 @@ aside>div {
 
 aside>marquee {
   margin: -10%;
+}
+
+.stamp {
+  max-width: 100%;
+  height: auto;
 }
 
 .sidebar-section {
@@ -559,4 +565,3 @@ main h6 {
     font-size: 1rem;
   }
 }
-
