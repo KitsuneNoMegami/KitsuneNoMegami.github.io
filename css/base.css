@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Pixelated Elegance";
   src:
-    url("/css/fonts/Elevatia.ttf") format("truetype"),
-    url("/css/fonts/ElevatiaItalic.ttf") format("truetype");
+    url("../css/fonts/Elevatia.ttf") format("truetype"),
+    url("../css/fonts/ElevatiaItalic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11,7 +11,7 @@
 @font-face {
   font-family: "Crochet";
   src:
-    url("/css/fonts/Crochet.ttf") format("truetype");
+    url("../css/fonts/Crochet.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -50,8 +50,8 @@
   --sidebar-width: 200px;
 
   /* cursor */
-  --cursor: url("/images/pinkcursor.cur"), auto;
-  --pointer: url("/images/cursorselect.cur"), auto;
+  --cursor: url("../images/pinkcursor.cur"), auto;
+  --pointer: url("../images/cursorselect.cur"), auto;
 }
 
 
@@ -74,7 +74,7 @@ body {
   font-family: var(--font);
   line-height: 1.2;
   background: var(--background-color);
-  background-image: url("/images/background/sol_annee_70.jpg");
+  background-image: url("../images/background/sol_annee_70.jpg");
   cursor: var(--cursor);
 }
 

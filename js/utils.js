@@ -1,7 +1,3 @@
-// Source - https://stackoverflow.com/a/77517986
-// Posted by Martin
-// Retrieved 2026-05-26, License - CC BY-SA 4.0
-
 /**
  * Get elapsed time ~ difference between two date/time values (ordered automatically)
  * 
@@ -23,7 +19,7 @@
  *   toString: (()=>string),
  * }} `{[key: string]: any}`
  */
-function elapsedTime(start_time, end_time){
+function elapsedTime(start_time, end_time) {
 
     /**
      * Parse date value ~ accepts valid Date instance, integer timestamp or date string
@@ -54,36 +50,36 @@ function elapsedTime(start_time, end_time){
     let milliseconds = 0
     const total_time = end.getTime() - start.getTime();
     const total_days = Math.floor(total_time / (24 * 60 * 60 * 1000));
-    if ((milliseconds += (end.getMilliseconds() - start.getMilliseconds())) < 0){
-        seconds --;
+    if ((milliseconds += (end.getMilliseconds() - start.getMilliseconds())) < 0) {
+        seconds--;
         milliseconds += 1000;
     }
-    if ((seconds += (end.getSeconds() - start.getSeconds())) < 0){
-        minutes --;
+    if ((seconds += (end.getSeconds() - start.getSeconds())) < 0) {
+        minutes--;
         seconds += 60;
     }
-    if ((minutes += (end.getMinutes() - start.getMinutes())) < 0){
-        hours --;
+    if ((minutes += (end.getMinutes() - start.getMinutes())) < 0) {
+        hours--;
         minutes += 60;
     }
-    if ((hours += (end.getHours() - start.getHours())) < 0){
-        days --;
+    if ((hours += (end.getHours() - start.getHours())) < 0) {
+        days--;
         hours += 24;
     }
     const start_year = start.getFullYear();
     let start_month = start.getMonth();
     years = end.getFullYear() - start_year;
-    if ((months = end.getMonth() - start_month) < 0){
-        years --;
+    if ((months = end.getMonth() - start_month) < 0) {
+        years--;
         months += 12;
     }
-    if ((days += (end.getDate() - start.getDate())) < 0){
-        if (end.getMonth() === start.getMonth()) start_month ++;
-        if (months <= 0){
-            years --;
+    if ((days += (end.getDate() - start.getDate())) < 0) {
+        if (end.getMonth() === start.getMonth()) start_month++;
+        if (months <= 0) {
+            years--;
             months = 11;
         }
-        else months --;
+        else months--;
         days += new Date(start_year, start_month + 1, 0).getDate();
     }
 
@@ -100,7 +96,7 @@ function elapsedTime(start_time, end_time){
         milliseconds,
         total_days,
         total_time,
-        toString: function(){
+        toString: function () {
             const values = [];
             const _add = (val, singular) => void (val ? values.push(val + ' ' + (val === 1 ? singular : singular + 's')) : null);
             _add(years, 'year');
@@ -111,7 +107,7 @@ function elapsedTime(start_time, end_time){
     }
 }
 
-result = elapsedTime(new Date(2022,8,22),Date.now());
+result = elapsedTime(new Date(2022, 8, 22), Date.now());
 console.log(result);
 
 document.getElementById("time").innerHTML = result.toString();
