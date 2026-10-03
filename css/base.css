@@ -95,7 +95,8 @@ mark {
 /* -------------------------------------------------------- */
 
 .layout {
-  width: 1000px;
+  width: 100%;
+  max-width: 1200px;
   display: grid;
   grid-gap: var(--margin);
   grid-template: "header header header" auto "leftSidebar main rightSidebar" auto "footer footer footer" auto / var(--sidebar-width) auto;
@@ -387,7 +388,6 @@ a:hover {
 
 main {
   line-height: 1.5;
-  width: 700px;
 }
 
 main p,
@@ -516,7 +516,7 @@ main h6 {
 /* ACCESSIBILITY */
 /* -------------------------------------------------------- */
 
-/* please do not remove this. */
+/*do not remove this. */
 
 #skip-to-content-link {
   position: fixed;
@@ -545,20 +545,36 @@ main h6 {
 /* CSS Code for devices < 800px */
 @media (max-width: 800px) {
   body {
-    font-size: 9px;
+    font-size: 13px;
   }
 
   .layout {
     grid-template: "header" auto "leftSidebar" auto "main" auto/1fr;
-    /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
   }
 
   .right-sidebar {
     display: none;
   }
 
+  #quote,
+  #time {
+    display: none;
+  }
+
   marquee {
     display: none;
+  }
+
+  .site-button div {
+    width: calc(30% - 10px);
+    margin: 10px;
+  }
+
+  nav ul {
+    margin: 0 -1px;
+    padding: 0;
+    list-style: none;
+    user-select: none;
   }
 
   #skip-to-content-link {

@@ -72,3 +72,26 @@ a {
 .dinosaure img {
   height: 40%;
 }
+
+#underconstruction {
+  text-align: center;
+  margin-top: 5%;
+}
+
+#underconstruction img {
+  width: 100%;
+}
+
+/* CSS Code for devices < 800px */
+@media (max-width: 800px) {
+
+  .portfolio-gallery div {
+    box-sizing: border-box;
+    width: calc(50% - 10px);
+    margin: 5px;
+    border: 5px solid;
+    position: relative;
+    overflow: hidden;
+  }
+
+}
