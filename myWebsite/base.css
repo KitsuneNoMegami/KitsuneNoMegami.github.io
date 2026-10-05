@@ -50,8 +50,8 @@
   --sidebar-width: 200px;
 
   /* cursor */
-  --cursor: url("../images/pinkcursor.cur"), auto;
-  --pointer: url("../images/cursorselect.cur"), auto;
+  --cursor: url("/utils/images/pinkcursor.cur"), auto;
+  --pointer: url("/utils/images/cursorselect.cur"), auto;
 }
 
 
@@ -74,7 +74,7 @@ body {
   font-family: var(--font);
   line-height: 1.2;
   background: var(--background-color);
-  background-image: url("../images/background/sol_annee_70.jpg");
+  background-image: url("/utils/images/background/sol_annee_70.jpg");
   cursor: var(--cursor);
 }
 
@@ -510,6 +510,105 @@ main h6 {
   padding-left: 0.75em;
 }
 
+
+/* -------------------------------------------------------- */
+/* INDEX PAGE */
+/* -------------------------------------------------------- */
+
+.portfolio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-gallery div {
+  box-sizing: border-box;
+  width: calc(33% - 10px);
+  margin: 5px;
+  border: 5px solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-gallery div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-gallery div .desc {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgb(201, 200, 200);
+  color: black;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 15px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 0.4s ease, opacity 0.5s ease;
+  font-family: var(--font);
+}
+
+.portfolio-gallery div:hover span {
+  opacity: 1;
+  transform: none;
+}
+
+.portfolio-gallery div:hover img {
+  transform: scale(1.35) rotate(10deg);
+}
+
+.tag {
+  font-size: 12px;
+  background: var(--tag-color);
+  border-radius: 30px;
+  width: fit-content;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.dinosaure {
+  display: flex;
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 45%;
+}
+
+.dinosaure img {
+  height: 40%;
+}
+
+#underconstruction {
+  text-align: center;
+  margin-top: 5%;
+}
+
+#underconstruction img {
+  width: 100%;
+}
+
+/* CSS Code for devices < 800px */
+@media (max-width: 800px) {
+
+  .portfolio-gallery div {
+    box-sizing: border-box;
+    width: calc(50% - 10px);
+    margin: 5px;
+    border: 5px solid;
+    position: relative;
+    overflow: hidden;
+  }
+
+}
 
 
 /* -------------------------------------------------------- */

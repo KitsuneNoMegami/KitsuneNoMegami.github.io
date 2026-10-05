@@ -79,15 +79,6 @@ function loadWidgetScripts() {
     })()`;
   document.body.appendChild(moonScript);
 
-  //! Women of the internet
-  const womenscript1 = document.createElement('script');
-  womenscript1.src = "https://womenoftheinternet.neocities.org/files/onionring-variables.js";
-  document.body.appendChild(womenscript1);
-
-  const womenscript2 = document.createElement('script');
-  womenscript2.src = "https://womenoftheinternet.neocities.org/files/soft-badge.js";
-  document.body.appendChild(womenscript2);
-
   //! Guestbook
   if (!document.getElementById('HCB_comment_box')) return;
   window.hcb_user = { PAGE: window.location.href };
@@ -125,7 +116,7 @@ function headerHTML() {
       <!-- HEADER -->
       <!-- =============================================== -->
       <header>
-        <img src="/images/gif/name.gif" name="websiteTitle" id="websiteTitle">
+        <img src="/utils/images/gif/name.gif" name="websiteTitle" id="websiteTitle">
       </header>
         
       <!-- =============================================== -->
@@ -141,21 +132,21 @@ function headerHTML() {
           <nav>
             <ul>
               <li>
-                <li><a href="/index.html" id="nav-title"><img width="25" src="/images/puce/home.gif" alt aria-hidden="true">Home</a></li>
-                <li><a href="/pages/more-about-me.html" id="nav-title"><img width="25"src="/images/puce/eye.gif" alt aria-hidden="true">More about me</a></li>
+                <li><a href="/index.html" id="nav-title"><img width="25" src="/utils/images/puce/home.gif" alt aria-hidden="true">Home</a></li>
+                <li><a href="/moreAboutMe/more-about-me.html" id="nav-title"><img width="25"src="/utils/images/puce/eye.gif" alt aria-hidden="true">More about me</a></li>
                 <details data-id="Hobbies">
                   <summary>Hobbies</summary>
                   <ul>
-                      <li><a href="/pages/creations.html"><img width="25"src="/images/puce/bear.gif" alt aria-hidden="true">Crochet</a></li>
-                      <li><a href="/pages/pokemon.html"><img width="25"src="/images/puce/pokemon.gif" alt aria-hidden="true">Pokemon</a></li>
-                      <li><a href="/pages/picrew.html"><img width="25" src="/images/puce/picrew.gif" alt aria-hidden="true">Picrew</a></li>
+                      <li><a href="/mesCreations/creations.html"><img width="25"src="/utils/images/puce/bear.gif" alt aria-hidden="true">Crochet</a></li>
+                      <li><a href="/pokemon/pokemon.html"><img width="25"src="/utils/images/puce/pokemon.gif" alt aria-hidden="true">Pokemon</a></li>
+                      <li><a href="/picrew/picrew.html"><img width="25" src="/utils/images/puce/picrew.gif" alt aria-hidden="true">Picrew</a></li>
                   </ul>
                 </details>
                 <details data-id="Website">
                   <summary>Website</summary>
                   <ul>
-                      <li><a href="/pages/resources.html"><img width="25" src="/images/puce/ressources.gif" alt aria-hidden="true">Resources</a></li>
-                      <li><a href="/pages/surprise.html"><img width="25"src="/images/puce/guestbook.gif" alt aria-hidden="true">Guestbook</a></li>
+                      <li><a href="/resources/resources.html"><img width="25" src="/utils/images/puce/ressources.gif" alt aria-hidden="true">Resources</a></li>
+                      <li><a href="/guestbook/guestbook.html"><img width="25"src="/utils/images/puce/guestbook.gif" alt aria-hidden="true">Guestbook</a></li>
                   </ul>
                 </details>
               </li>
@@ -179,30 +170,30 @@ function headerHTML() {
         <div class="sidebar-section" id="links">
           <div class="sidebar-title">Links</div>
           <div class="site-button">
-          	<div><a href="https://github.com/KitsuneNoMegami"><img src="./images/buttonrepositoy.gif" alt="buttonrepository"></a></div>
-            <div><a href="https://boxd.it/bOZFp"><img src="./images/letterboxd.gif"  alt="buttonletterboxd"></a></div> 
+          	<div><a href="https://github.com/KitsuneNoMegami"><img src="./utils/images/buttonrepositoy.gif" alt="buttonrepository"></a></div>
+            <div><a href="https://boxd.it/bOZFp"><img src="./utils/images/letterboxd.gif"  alt="buttonletterboxd"></a></div> 
           </div>
         </div>
         
         <marquee>
-          <img src="/images/stamps/nomnomnom.gif" alt="nomnomnom" id="stamp">
-          <img src="/images/stamps/cherryblossom.png" alt="cherryblossom" id="stamp">
-          <img src="/images/stamps/clubpenguin.jpg" alt="clubpenguin" id="stamp">
-          <img src="/images/stamps/rawr.gif" alt="rawr" id="stamp">
-          <img src="/images/stamps/cows.png" alt="cows" id="stamp">
-          <img src="/images/stamps/mms.gif" alt="mms" id="stamp">
-          <img src="/images/stamps/computeralive.png" alt="computeralive" id="stamp">
-          <img src="/images/stamps/ragequit.gif" alt="ragequit" id="stamp">
-          <img src="/images/stamps/sol.png" alt="sol" id="stamp">
-          <img src="/images/stamps/bubble.gif" alt="bubble" id="stamp">
-          <img src="/images/stamps/rainbow.gif" alt="rainbow" id="stamp">
-          <img src="/images/stamps/cheese.gif" alt="cheese" id="stamp">
-          <img src="/images/stamps/sleepwithplushies.png" alt="sleepwithplushies" id="stamp">
-          <img src="/images/stamps/papercut.gif" alt="papercut" id="stamp">
-          <img src="/images/stamps/leftportail.png" alt="leftportail" id="stamp">
-          <img src="/images/stamps/rightportal.png" alt="rightportal" id="stamp">
-          <img src="/images/stamps/stamponfire.gif" alt="stamponfire" id="stamp">
-          <img src="/images/stamps/wiggly.png" alt="wiggly" id="stamp">
+          <img src="/utils/images/stamps/nomnomnom.gif" alt="nomnomnom" id="stamp">
+          <img src="/utils/images/stamps/cherryblossom.png" alt="cherryblossom" id="stamp">
+          <img src="/utils/images/stamps/clubpenguin.jpg" alt="clubpenguin" id="stamp">
+          <img src="/utils/images/stamps/rawr.gif" alt="rawr" id="stamp">
+          <img src="/utils/images/stamps/cows.png" alt="cows" id="stamp">
+          <img src="/utils/images/stamps/mms.gif" alt="mms" id="stamp">
+          <img src="/utils/images/stamps/computeralive.png" alt="computeralive" id="stamp">
+          <img src="/utils/images/stamps/ragequit.gif" alt="ragequit" id="stamp">
+          <img src="/utils/images/stamps/sol.png" alt="sol" id="stamp">
+          <img src="/utils/images/stamps/bubble.gif" alt="bubble" id="stamp">
+          <img src="/utils/images/stamps/rainbow.gif" alt="rainbow" id="stamp">
+          <img src="/utils/images/stamps/cheese.gif" alt="cheese" id="stamp">
+          <img src="/utils/images/stamps/sleepwithplushies.png" alt="sleepwithplushies" id="stamp">
+          <img src="/utils/images/stamps/papercut.gif" alt="papercut" id="stamp">
+          <img src="/utils/images/stamps/leftportail.png" alt="leftportail" id="stamp">
+          <img src="/utils/images/stamps/rightportal.png" alt="rightportal" id="stamp">
+          <img src="/utils/images/stamps/stamponfire.gif" alt="stamponfire" id="stamp">
+          <img src="/utils/images/stamps/wiggly.png" alt="wiggly" id="stamp">
         </marquee> 
       </aside>
       <aside class="right-sidebar">
@@ -239,7 +230,7 @@ function footerHTML() {
 
       <footer>
             <div>
-            <p><img src="./images/gif/noAI.gif"></br>
+            <p><img src="./utils/images/gif/noAI.gif"></br>
             © 2025 Beth, all rights reserved ♡</p>
             </div>
       </footer>`;
