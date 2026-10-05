@@ -538,7 +538,7 @@ main h6 {
 
 .portfolio-gallery div .desc {
   position: absolute;
-  bottom: 15px;
+  bottom: 0px;
   left: 0;
   width: 100%;
   box-sizing: border-box;
@@ -569,6 +569,11 @@ main h6 {
   width: fit-content;
   padding-left: 6px;
   padding-right: 6px;
+}
+
+.subject {
+  font-size: 10px;
+  font-style: oblique;
 }
 
 a {
@@ -680,7 +685,7 @@ a {
     font-size: 1rem;
   }
 
-  footer{
+  footer {
     text-align: left;
   }
 }
