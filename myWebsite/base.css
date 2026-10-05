@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Pixelated Elegance";
   src:
-    url("../css/fonts/Elevatia.ttf") format("truetype"),
-    url("../css/fonts/ElevatiaItalic.ttf") format("truetype");
+    url("/utils/fonts/Elevatia.ttf") format("truetype"),
+    url("/utils/fonts/ElevatiaItalic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11,7 +11,7 @@
 @font-face {
   font-family: "Crochet";
   src:
-    url("../css/fonts/Crochet.ttf") format("truetype");
+    url("/utils/fonts/Crochet.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

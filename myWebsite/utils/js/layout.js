@@ -170,8 +170,8 @@ function headerHTML() {
         <div class="sidebar-section" id="links">
           <div class="sidebar-title">Links</div>
           <div class="site-button">
-          	<div><a href="https://github.com/KitsuneNoMegami"><img src="./utils/images/buttonrepositoy.gif" alt="buttonrepository"></a></div>
-            <div><a href="https://boxd.it/bOZFp"><img src="./utils/images/letterboxd.gif"  alt="buttonletterboxd"></a></div> 
+          	<div><a href="https://github.com/KitsuneNoMegami"><img src="/utils/images/buttonrepositoy.gif" alt="buttonrepository"></a></div>
+            <div><a href="https://boxd.it/bOZFp"><img src="/utils/images/letterboxd.gif"  alt="buttonletterboxd"></a></div> 
           </div>
         </div>
         
@@ -282,7 +282,7 @@ function getNesting() {
 document.addEventListener(
   'DOMContentLoaded',
   async () => {
-    const quotesList = await (await fetch('./quotes.json')).json();
+    const quotesList = await (await fetch('/utils/quotes.json')).json();
     document.getElementById("blockquote").innerHTML = quotesList[Math.floor(Math.random() * quotesList.length)];
   }
 );
