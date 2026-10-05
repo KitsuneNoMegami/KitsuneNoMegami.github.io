@@ -71,7 +71,7 @@
 .separator{
   position: absolute;
   display: flex;
-  margin-left: -17px;
+  align-items: center;
 }
 .separator img{
   width: 230px;

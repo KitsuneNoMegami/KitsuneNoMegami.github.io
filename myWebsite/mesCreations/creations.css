@@ -31,11 +31,17 @@
     cursor: pointer;
 }
 
-#sticker{
+#sticker {
     position: absolute;
     z-index: 999;
     cursor: move;
-    bottom: 100px;
-    right:23%; 
+    bottom: 140px;
+    right: 20%;
     transform: rotate(0deg);
+}
+
+@media (max-width: 800px) {
+    #sticker{
+        display: none;
+    }
 }
