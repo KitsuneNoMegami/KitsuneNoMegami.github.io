@@ -230,7 +230,7 @@ function footerHTML() {
 
       <footer>
             <div>
-            <p><img src="./utils/images/gif/noAI.gif"></br>
+            <p><img src="/utils/images/gif/noAI.gif"></br>
             © 2025 Beth, all rights reserved ♡</p>
             </div>
       </footer>`;

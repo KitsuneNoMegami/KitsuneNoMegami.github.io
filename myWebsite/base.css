@@ -679,4 +679,8 @@ a {
   #skip-to-content-link {
     font-size: 1rem;
   }
+
+  footer{
+    text-align: left;
+  }
 }
