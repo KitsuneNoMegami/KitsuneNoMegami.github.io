@@ -50,8 +50,8 @@
   --sidebar-width: 200px;
 
   /* cursor */
-  --cursor: url("/utils/images/pinkcursor.cur"), auto;
-  --pointer: url("/utils/images/cursorselect.cur"), auto;
+  --cursor: url("./utils/images/pinkcursor.cur"), auto;
+  --pointer: url("./utils/images/cursorselect.cur"), auto;
 }
 
 
@@ -74,7 +74,7 @@ body {
   font-family: var(--font);
   line-height: 1.2;
   background: var(--background-color);
-  background-image: url("/utils/images/background/sol_annee_70.jpg");
+  background-image: url("./utils/images/background/sol_annee_70.jpg");
   cursor: var(--cursor);
 }
 

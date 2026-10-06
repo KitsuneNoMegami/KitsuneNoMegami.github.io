@@ -103,7 +103,8 @@ function loadWidgetScripts() {
   document.body.appendChild(hcbScript);
 }
 
-const nesting = getNesting();
+const UTILS = new URL("../", document.currentScript.src).href;   // le dossier utils/
+const SITE  = new URL("../../", document.currentScript.src).href; // la racine du site
 
 function headerHTML() {
   // ${nesting} outputs "./" or "../" depending on current page depth.
@@ -116,7 +117,7 @@ function headerHTML() {
       <!-- HEADER -->
       <!-- =============================================== -->
       <header>
-        <img src="/utils/images/gif/name.gif" name="websiteTitle" id="websiteTitle">
+        <img src="${UTILS}images/gif/name.gif" name="websiteTitle" id="websiteTitle">
       </header>
         
       <!-- =============================================== -->
@@ -132,21 +133,21 @@ function headerHTML() {
           <nav>
             <ul>
               <li>
-                <li><a href="/index.html" id="nav-title"><img width="25" src="/utils/images/puce/home.gif" alt aria-hidden="true">Home</a></li>
-                <li><a href="/moreAboutMe/more-about-me.html" id="nav-title"><img width="25"src="/utils/images/puce/eye.gif" alt aria-hidden="true">More about me</a></li>
+                <li><a href="${SITE}index.html" id="nav-title"><img width="25" src="${UTILS}images/puce/home.gif" alt aria-hidden="true">Home</a></li>
+                <li><a href="${SITE}moreAboutMe/more-about-me.html" id="nav-title"><img width="25"src="${UTILS}images/puce/eye.gif" alt aria-hidden="true">More about me</a></li>
                 <details data-id="Hobbies">
                   <summary>Hobbies</summary>
                   <ul>
-                      <li><a href="/mesCreations/creations.html"><img width="25"src="/utils/images/puce/bear.gif" alt aria-hidden="true">Crochet</a></li>
-                      <li><a href="/pokemon/pokemon.html"><img width="25"src="/utils/images/puce/pokemon.gif" alt aria-hidden="true">Pokemon</a></li>
-                      <li><a href="/picrew/picrew.html"><img width="25" src="/utils/images/puce/picrew.gif" alt aria-hidden="true">Picrew</a></li>
+                      <li><a href="${SITE}mesCreations/creations.html"><img width="25"src="${UTILS}images/puce/bear.gif" alt aria-hidden="true">Crochet</a></li>
+                      <li><a href="${SITE}pokemon/pokemon.html"><img width="25"src="${UTILS}images/puce/pokemon.gif" alt aria-hidden="true">Pokemon</a></li>
+                      <li><a href="${SITE}picrew/picrew.html"><img width="25" src="${UTILS}images/puce/picrew.gif" alt aria-hidden="true">Picrew</a></li>
                   </ul>
                 </details>
                 <details data-id="Website">
                   <summary>Website</summary>
                   <ul>
-                      <li><a href="/resources/resources.html"><img width="25" src="/utils/images/puce/ressources.gif" alt aria-hidden="true">Resources</a></li>
-                      <li><a href="/guestbook/guestbook.html"><img width="25"src="/utils/images/puce/guestbook.gif" alt aria-hidden="true">Guestbook</a></li>
+                      <li><a href="${SITE}resources/resources.html"><img width="25" src="${UTILS}images/puce/ressources.gif" alt aria-hidden="true">Resources</a></li>
+                      <li><a href="${SITE}guestbook/guestbook.html"><img width="25"src="${UTILS}images/puce/guestbook.gif" alt aria-hidden="true">Guestbook</a></li>
                   </ul>
                 </details>
               </li>
@@ -170,30 +171,30 @@ function headerHTML() {
         <div class="sidebar-section" id="links">
           <div class="sidebar-title">Links</div>
           <div class="site-button">
-          	<div><a href="https://github.com/KitsuneNoMegami"><img src="/utils/images/buttonrepositoy.gif" alt="buttonrepository"></a></div>
-            <div><a href="https://boxd.it/bOZFp"><img src="/utils/images/letterboxd.gif"  alt="buttonletterboxd"></a></div> 
+          	<div><a href="https://github.com/KitsuneNoMegami"><img src="${UTILS}images/buttonrepositoy.gif" alt="buttonrepository"></a></div>
+            <div><a href="https://boxd.it/bOZFp"><img src="${UTILS}images/letterboxd.gif"  alt="buttonletterboxd"></a></div> 
           </div>
         </div>
         
         <marquee>
-          <img src="/utils/images/stamps/nomnomnom.gif" alt="nomnomnom" id="stamp">
-          <img src="/utils/images/stamps/cherryblossom.png" alt="cherryblossom" id="stamp">
-          <img src="/utils/images/stamps/clubpenguin.jpg" alt="clubpenguin" id="stamp">
-          <img src="/utils/images/stamps/rawr.gif" alt="rawr" id="stamp">
-          <img src="/utils/images/stamps/cows.png" alt="cows" id="stamp">
-          <img src="/utils/images/stamps/mms.gif" alt="mms" id="stamp">
-          <img src="/utils/images/stamps/computeralive.png" alt="computeralive" id="stamp">
-          <img src="/utils/images/stamps/ragequit.gif" alt="ragequit" id="stamp">
-          <img src="/utils/images/stamps/sol.png" alt="sol" id="stamp">
-          <img src="/utils/images/stamps/bubble.gif" alt="bubble" id="stamp">
-          <img src="/utils/images/stamps/rainbow.gif" alt="rainbow" id="stamp">
-          <img src="/utils/images/stamps/cheese.gif" alt="cheese" id="stamp">
-          <img src="/utils/images/stamps/sleepwithplushies.png" alt="sleepwithplushies" id="stamp">
-          <img src="/utils/images/stamps/papercut.gif" alt="papercut" id="stamp">
-          <img src="/utils/images/stamps/leftportail.png" alt="leftportail" id="stamp">
-          <img src="/utils/images/stamps/rightportal.png" alt="rightportal" id="stamp">
-          <img src="/utils/images/stamps/stamponfire.gif" alt="stamponfire" id="stamp">
-          <img src="/utils/images/stamps/wiggly.png" alt="wiggly" id="stamp">
+          <img src="${UTILS}images/stamps/nomnomnom.gif" alt="nomnomnom" id="stamp">
+          <img src="${UTILS}images/stamps/cherryblossom.png" alt="cherryblossom" id="stamp">
+          <img src="${UTILS}images/stamps/clubpenguin.jpg" alt="clubpenguin" id="stamp">
+          <img src="${UTILS}images/stamps/rawr.gif" alt="rawr" id="stamp">
+          <img src="${UTILS}images/stamps/cows.png" alt="cows" id="stamp">
+          <img src="${UTILS}images/stamps/mms.gif" alt="mms" id="stamp">
+          <img src="${UTILS}images/stamps/computeralive.png" alt="computeralive" id="stamp">
+          <img src="${UTILS}images/stamps/ragequit.gif" alt="ragequit" id="stamp">
+          <img src="${UTILS}images/stamps/sol.png" alt="sol" id="stamp">
+          <img src="${UTILS}images/stamps/bubble.gif" alt="bubble" id="stamp">
+          <img src="${UTILS}images/stamps/rainbow.gif" alt="rainbow" id="stamp">
+          <img src="${UTILS}images/stamps/cheese.gif" alt="cheese" id="stamp">
+          <img src="${UTILS}images/stamps/sleepwithplushies.png" alt="sleepwithplushies" id="stamp">
+          <img src="${UTILS}images/stamps/papercut.gif" alt="papercut" id="stamp">
+          <img src="${UTILS}images/stamps/leftportail.png" alt="leftportail" id="stamp">
+          <img src="${UTILS}images/stamps/rightportal.png" alt="rightportal" id="stamp">
+          <img src="${UTILS}images/stamps/stamponfire.gif" alt="stamponfire" id="stamp">
+          <img src="${UTILS}images/stamps/wiggly.png" alt="wiggly" id="stamp">
         </marquee> 
       </aside>
       <aside class="right-sidebar">
@@ -230,7 +231,7 @@ function footerHTML() {
 
       <footer>
             <div>
-            <p><img src="/utils/images/gif/noAI.gif"></br>
+            <p><img src="${UTILS}images/gif/noAI.gif"></br>
             © 2025 Beth, all rights reserved ♡</p>
             </div>
       </footer>`;
@@ -282,7 +283,7 @@ function getNesting() {
 document.addEventListener(
   'DOMContentLoaded',
   async () => {
-    const quotesList = await (await fetch('/utils/quotes.json')).json();
+    const quotesList = await (await fetch(UTILS+"quotes.json")).json();
     document.getElementById("blockquote").innerHTML = quotesList[Math.floor(Math.random() * quotesList.length)];
   }
 );
