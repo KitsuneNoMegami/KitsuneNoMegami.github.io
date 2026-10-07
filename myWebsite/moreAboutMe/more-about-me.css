@@ -72,17 +72,15 @@
 .separator {
   position: absolute;
   display: flex;
-  align-items: center;
+  overflow: hidden;
+  margin-left: -5%;
 }
 
 .separator img {
-  width: 230px;
+  width: 40%;
 }
 
 /* CSS Code for devices < 800px */
 @media (max-width: 800px) {
-  /* ! TEMPORAIRE ! */
-  .separator{
-    display:none;
-  }
+  
 }

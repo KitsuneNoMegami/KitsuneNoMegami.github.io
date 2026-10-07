@@ -214,6 +214,11 @@ function headerHTML() {
                               <div style="font-size:small"></div>
                       </div>
               </div>
+              <div class="sidebar-section">
+                <div class="sidebar-title">Visitor counter</div>
+                <img src="https://counter6.optistats.ovh/private/compteurdevisite.php?c=gnrkz6zqcqg8rlwx9rry28rd943slr11"
+                    border="0" class="hit_counter" alt="visitor counter">
+              </div>
       </aside>`;
 }
 
