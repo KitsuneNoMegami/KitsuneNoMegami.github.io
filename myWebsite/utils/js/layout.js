@@ -133,7 +133,7 @@ function headerHTML() {
           <nav>
             <ul>
               <li>
-                <li><a href="elisabethm.vercel.app" id="nav-title"><img width="25" src="${UTILS}images/puce/home.gif" alt aria-hidden="true">Home</a></li>
+                <li><a href="https://elisabethm.vercel.app" id="nav-title"><img width="25" src="${UTILS}images/puce/home.gif" alt aria-hidden="true">Home</a></li>
                 <li><a href="${SITE}moreAboutMe/more-about-me.html" id="nav-title"><img width="25"src="${UTILS}images/puce/eye.gif" alt aria-hidden="true">More about me</a></li>
                 <details data-id="Hobbies">
                   <summary>Hobbies</summary>
