@@ -82,8 +82,6 @@ function loadWidgetScripts() {
   //! Guestbook
   if (!document.getElementById('HCB_comment_box')) return;
   window.hcb_user = { PAGE: window.location.href };
-
-
   const hcbScript = document.createElement('script');
   hcbScript.type = 'text/javascript';
   hcbScript.id = 'hcb';
@@ -217,7 +215,7 @@ function headerHTML() {
               <div class="sidebar-section">
                 <div class="sidebar-title">Visitor counter</div>
                 <img src="https://counter6.optistats.ovh/private/compteurdevisite.php?c=gnrkz6zqcqg8rlwx9rry28rd943slr11"
-                    border="0" class="hit_counter" alt="visitor counter">
+                    border="0" class="visit-badge" alt="visitor counter">
               </div>
       </aside>`;
 }
@@ -230,16 +228,16 @@ function footerHTML() {
   return `
 
 
-      <!-- =============================================== -->
-      <!-- FOOTER -->
-      <!-- =============================================== -->
+                                            <!-- =============================================== -->
+                                            <!-- FOOTER -->
+                                            <!-- =============================================== -->
 
-      <footer>
-            <div>
-            <p><img src="${UTILS}images/gif/noAI.gif"></br>
+                                            <footer>
+                                              <div>
+                                                <p><img src="${UTILS}images/gif/noAI.gif"></br>
             © 2025 Beth, all rights reserved ♡</p>
-            </div>
-      </footer>`;
+                                              </div>
+                                            </footer>`;
 }
 
 /* Do not edit anything below this line unless you know what you're doing. */
@@ -288,7 +286,7 @@ function getNesting() {
 document.addEventListener(
   'DOMContentLoaded',
   async () => {
-    const quotesList = await (await fetch(UTILS+"quotes.json")).json();
+    const quotesList = await (await fetch(UTILS + "quotes.json")).json();
     document.getElementById("blockquote").innerHTML = quotesList[Math.floor(Math.random() * quotesList.length)];
   }
 );
