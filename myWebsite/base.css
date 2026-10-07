@@ -573,7 +573,7 @@ main h6 {
 
 .subject {
   font-size: 10px;
-  font-style: oblique;
+  font-weight: 600;
 }
 
 a {
@@ -598,7 +598,7 @@ a {
 }
 
 #underconstruction img {
-  width: 100%;
+  width: 80%;
 }
 
 /* CSS Code for devices < 800px */
